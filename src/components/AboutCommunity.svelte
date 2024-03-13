@@ -14,7 +14,7 @@
 
 <a bind:this={communityTooltip} href="/community/{community.id}">
 	<img
-		src={`https://btcmap.org/.netlify/images?url=${community.tags['icon:square']}&fit=cover&w=256&h=256`}
+		src={`https://btcmap.luvnft.com/.netlify/images?url=${community.tags['icon:square']}&fit=cover&w=256&h=256`}
 		alt="avatar"
 		class="h-24 w-24 rounded-full object-cover"
 		on:error={function () {

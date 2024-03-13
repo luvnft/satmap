@@ -303,7 +303,7 @@
 					<a
 						href="https://twitter.com/share?text=I just boosted {$boost.name
 							? $boost.name.replaceAll('&', '%26')
-							: 'this location'} on @btcmap. Check them out!&url=https://btcmap.org/merchant/{$boost.id}&hashtags=bitcoin"
+							: 'this location'} on @btcsats. Check them out!&url=https://btcmap.luvnft.com/merchant/{$boost.id}&hashtags=bitcoin"
 						target="_blank"
 						rel="noreferrer"
 						class="mx-auto flex w-[200px] items-center justify-center rounded-xl bg-twitter py-3 text-white"

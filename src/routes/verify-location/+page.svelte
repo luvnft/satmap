@@ -45,7 +45,7 @@
 			name = merchant.osm_json.tags?.name;
 			lat = latCalc(merchant.osm_json);
 			long = longCalc(merchant.osm_json);
-			location = `https://btcmap.org/map?lat=${lat}&long=${long}`;
+			location = `https://btcmap.luvnft.com/map?lat=${lat}&long=${long}`;
 			edit = `https://www.openstreetmap.org/edit?${merchant.osm_json.type}=${merchant.osm_json.id}`;
 			selected = true;
 		} else {
@@ -146,7 +146,7 @@
 						name = elementOSM.tags?.name || '';
 						lat = latC;
 						long = longC;
-						location = `https://btcmap.org/map?lat=${lat}&long=${long}`;
+						location = `https://btcmap.luvnft.com/map?lat=${lat}&long=${long}`;
 						edit = `https://www.openstreetmap.org/edit?${elementOSM.type}=${elementOSM.id}`;
 						selected = true;
 					}
@@ -308,9 +308,9 @@
 
 <svelte:head>
 	<title>BTC Map - Verify Location</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/verify.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/verify.png" />
 	<meta property="twitter:title" content="BTC Map - Verify Location" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/verify.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/verify.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">

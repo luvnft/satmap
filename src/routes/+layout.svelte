@@ -60,7 +60,7 @@
 	{#if !$page.url.pathname.startsWith('/tagger') && !$page.url.pathname.startsWith('/community') && !$page.url.pathname.startsWith('/merchant')}
 		<meta
 			name="lightning"
-			content="lnurlp:LNURL1DP68GURN8GHJ7CM0WFJJUCN5VDKKZUPWDAEXWTMVDE6HYMRS9ARKXVN4W5EQPSYZ34"
+			content="lnurlp:lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp"
 		/>
 		<meta property="alby:image" content="/images/logo.svg" />
 		<meta property="alby:name" content="BTC Map" />

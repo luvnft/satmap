@@ -4,9 +4,9 @@
 
 <svelte:head>
 	<title>BTC Map - License</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 	<meta property="twitter:title" content="BTC Map - License" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">
@@ -14,13 +14,13 @@
 	<div class="mx-auto w-10/12 xl:w-[1200px]">
 		<main class="mb-20 mt-10 space-y-5 text-body dark:text-white">
 			<p class="text-center font-semibold text-primary dark:text-white">
-				BTC Map - Easily find places to spend sats anywhere on the planet.
+				BTC Map - The "Google Maps" of Bitcoin Sats, locate businesses that accept Sats worldwide
 				<br />
 				Copyright &#169; 2022-{new Date().getFullYear()} BTC Map
 				<br />
 				<a
-					href="mailto:hello@btcmap.org"
-					class="font-normal text-link transition-colors hover:text-hover">hello@btcmap.org</a
+					href="mailto:info@luvnft.com"
+					class="font-normal text-link transition-colors hover:text-hover">info@luvnft.com</a
 				>
 			</p>
 			<p>

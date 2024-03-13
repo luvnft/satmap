@@ -5,9 +5,9 @@
 
 <svelte:head>
 	<title>BTC Map - Privacy Policy</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 	<meta property="twitter:title" content="BTC Map - Privacy Policy" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">
@@ -83,7 +83,7 @@
 				<p>
 					If you include a Twitter handle, we may Tweet about your submission from the <a
 						href={$socials.twitter}
-						class="text-link transition-colors hover:text-hover">@btcmap</a
+						class="text-link transition-colors hover:text-hover">@btcsats</a
 					> Twitter account.
 				</p>
 			</div>
@@ -183,8 +183,8 @@
 				<h2 class="text-3xl font-semibold text-primary dark:text-white">Contact Us</h2>
 				<p>
 					If you have any questions or feedback about our privacy policy, please contact us at <a
-						href="mailto:hello@btcmap.org"
-						class="text-link transition-colors hover:text-hover">hello@btcmap.org</a
+						href="mailto:info@luvnft.com"
+						class="text-link transition-colors hover:text-hover">info@luvnft.com</a
 					> or on any of our social platforms.
 				</p>
 			</div>

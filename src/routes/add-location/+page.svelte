@@ -268,9 +268,9 @@
 
 <svelte:head>
 	<title>BTC Map - Add Location</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/add.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/add.png" />
 	<meta property="twitter:title" content="BTC Map - Add Location" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/add.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/add.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">
@@ -678,7 +678,7 @@
 									required
 									type="email"
 									name="contact"
-									placeholder="hello@btcmap.org"
+									placeholder="info@luvnft.com"
 									class="w-full rounded-2xl border-2 border-input p-3 transition-all focus:outline-link dark:bg-white/[0.15]"
 									bind:this={contact}
 								/>

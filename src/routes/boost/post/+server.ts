@@ -27,7 +27,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	}
 
 	const boost = await axios
-		.get(`https://btcmap.org/boost/invoice/status?hash=${hash}`)
+		.get(`https://btcmap.luvnft.com/boost/invoice/status?hash=${hash}`)
 		.then(function (response) {
 			if (response.data.paid === true) {
 				used.push(hash);

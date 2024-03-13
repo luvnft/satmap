@@ -15,9 +15,9 @@
 
 <svelte:head>
 	<title>BTC Map - Apps</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/apps.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/apps.png" />
 	<meta property="twitter:title" content="BTC Map - Apps" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/apps.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/apps.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">

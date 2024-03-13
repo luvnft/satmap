@@ -17,7 +17,7 @@
 	export let data: PageData;
 
 	let onchain = data.address;
-	const lnurlp = 'LNURL1DP68GURN8GHJ7CM0WFJJUCN5VDKKZUPWDAEXWTMVDE6HYMRS9ARKXVN4W5EQPSYZ34';
+	const lnurlp = 'lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp';
 
 	let showQr = false;
 	let network: DonationType;
@@ -58,9 +58,9 @@
 
 <svelte:head>
 	<title>BTC Map - Support Us</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/support.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/support.png" />
 	<meta property="twitter:title" content="BTC Map - Support Us" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/support.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/support.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">
@@ -73,14 +73,14 @@
 						? 'text-white'
 						: 'gradient'} text-4xl font-semibold !leading-tight md:text-5xl"
 				>
-					Help place bitcoin on the map.
+					Help us place bitcoin on the map.
 				</h1>
 			{:else}
 				<HeaderPlaceholder />
 			{/if}
 
 			<h2 class="mx-auto w-full text-xl font-semibold text-primary dark:text-white lg:w-[800px]">
-				BTCMap.org is a free and open source project (FOSS). We rely on donations and sponsorship to
+				btcmap.luvnft.com is powered by a Blockchain nonprofit. We rely on donations and sponsorship to
 				continue.
 
 				<br /><br />
@@ -136,7 +136,7 @@
 				<h2 class="text-xl font-semibold uppercase text-primary dark:text-white">
 					Our amazing supporters
 				</h2>
-				<a href="mailto:hello@btcmap.org" class="text-link transition-colors hover:text-hover"
+				<a href="mailto:info@luvnft.com" class="text-link transition-colors hover:text-hover"
 					>Become a Sponsor</a
 				>
 

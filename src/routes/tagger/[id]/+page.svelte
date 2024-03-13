@@ -525,9 +525,9 @@
 
 <svelte:head>
 	<title>{username ? username + ' - ' : ''}BTC Map Supertagger</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/supertagger.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/supertagger.png" />
 	<meta property="twitter:title" content="{username ? username + ' - ' : ''}BTC Map Supertagger" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/supertagger.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/supertagger.png" />
 
 	{#if lightning}
 		<meta name="lightning" content="lnurlp:{lightning}" />
@@ -536,7 +536,7 @@
 	{:else}
 		<meta
 			name="lightning"
-			content="lnurlp:LNURL1DP68GURN8GHJ7CM0WFJJUCN5VDKKZUPWDAEXWTMVDE6HYMRS9ARKXVN4W5EQPSYZ34"
+			content="lnurlp:lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp"
 		/>
 		<meta property="alby:image" content="/images/logo.svg" />
 		<meta property="alby:name" content="BTC Map" />

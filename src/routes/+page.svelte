@@ -6,9 +6,9 @@
 
 <svelte:head>
 	<title>BTC Map</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 	<meta property="twitter:title" content="BTC Map" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
 <div class="street-map bg-teal dark:bg-dark">
@@ -27,7 +27,7 @@
 							? 'text-white'
 							: 'gradient'} text-center text-4xl font-semibold !leading-tight md:text-5xl xl:text-left"
 					>
-						Easily find places to spend sats anywhere on the planet.
+						The "Google Maps" of Bitcoin Sats, locate businesses that accept Sats worldwide
 					</h1>
 				{:else}
 					<HeaderPlaceholder />
@@ -63,16 +63,15 @@
 					{/each}
 				</div>
 				<h2 class="text-center text-xl font-semibold text-primary dark:text-white xl:text-left">
-					Our apps and the underlying data are free and open source.
+					$RNT for rent. $W3ST for What3Words locations. $L$VE for everything else.
 					<br /><br />
-					We use
+					Shill your Sats in the
 					<a
-						href="https://www.openstreetmap.org/about"
+						href="https://twitter.com/i/communities/1766259879365243221"
 						target="_blank"
 						rel="noreferrer"
-						class="text-link transition-colors hover:text-hover">OpenStreetMap</a
-					> to properly tag places where you can spend bitcoin and we display that data in our beautiful
-					apps.
+						class="text-link transition-colors hover:text-hover">X BTCSATS</a
+					> community or in the LUV NFT Discord link below.
 				</h2>
 			</div>
 			{#if typeof window !== 'undefined'}

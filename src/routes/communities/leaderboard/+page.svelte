@@ -132,9 +132,9 @@
 
 <svelte:head>
 	<title>BTC Map - Communities Leaderboard</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/top-communities.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/top-communities.png" />
 	<meta property="twitter:title" content="BTC Map - Communities Leaderboard" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/top-communities.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/top-communities.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">

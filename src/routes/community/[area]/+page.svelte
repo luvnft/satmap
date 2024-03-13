@@ -112,7 +112,7 @@
 
 		const community = communityFound.tags;
 
-		avatar = `https://btcmap.org/.netlify/images?url=${community['icon:square']}&fit=cover&w=256&h=256`;
+		avatar = `https://btcmap.luvnft.com/.netlify/images?url=${community['icon:square']}&fit=cover&w=256&h=256`;
 		org = community.organization;
 		sponsor = community.sponsor;
 		continent = community.continent;
@@ -894,9 +894,9 @@
 
 <svelte:head>
 	<title>{name ? name + ' - ' : ''}BTC Map Community</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/communities.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
 	<meta property="twitter:title" content="{name ? name + ' - ' : ''}BTC Map Community" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/communities.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
 
 	{#if lightning && lightning.type === 'address'}
 		<meta name="lightning" content="lnurlp:{lightning.destination}" />
@@ -905,7 +905,7 @@
 	{:else}
 		<meta
 			name="lightning"
-			content="lnurlp:LNURL1DP68GURN8GHJ7CM0WFJJUCN5VDKKZUPWDAEXWTMVDE6HYMRS9ARKXVN4W5EQPSYZ34"
+			content="lnurlp:lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp"
 		/>
 		<meta property="alby:image" content="/images/logo.svg" />
 		<meta property="alby:name" content="BTC Map" />

@@ -44,9 +44,9 @@
 
 <svelte:head>
 	<title>BTC Map - Media</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 	<meta property="twitter:title" content="BTC Map - Media" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">

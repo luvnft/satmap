@@ -163,9 +163,9 @@
 
 <svelte:head>
 	<title>BTC Map - Badges</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/badges.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/badges.png" />
 	<meta property="twitter:title" content="BTC Map - Badges" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/badges.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/badges.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">

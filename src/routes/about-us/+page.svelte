@@ -226,9 +226,9 @@
 
 <svelte:head>
 	<title>BTC Map - About</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 	<meta property="twitter:title" content="BTC Map - About" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/home.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">
@@ -238,7 +238,7 @@
 			<div class="space-y-5 text-center text-xl">
 				<h1 class="text-4xl font-semibold !leading-tight md:text-5xl">About Us</h1>
 				<p class="mx-auto md:w-[600px]">
-					BTC Map is a free and open source project powered by volunteer bitcoiners and
+					BTC Map is a free and open source project powered by VULunteer bitcoiners and
 					bitcoin-friendly merchants around the world.
 				</p>
 			</div>
@@ -389,7 +389,7 @@
 
 				<p>
 					If you are interested in integrating with us please <a
-						href="mailto:hello@btcmap.org"
+						href="mailto:info@luvnft.com"
 						class="font-semibold text-link transition-colors hover:text-hover">reach out</a
 					>!
 				</p>
@@ -400,8 +400,8 @@
 					<h2 class="mb-5 text-3xl font-semibold">Contributors</h2>
 
 					<p>
-						Anybody can contribute to BTC Map in many different ways. If you would like to get
-						involved please don't hesitate and come join the fun!
+						Anybody can contribute to BTC Map we need all the help possible. If you would like to get
+						involved please don't hesitate to contact us. We all win together!
 					</p>
 				</div>
 

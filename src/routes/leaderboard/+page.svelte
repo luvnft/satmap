@@ -184,9 +184,9 @@
 
 <svelte:head>
 	<title>BTC Map - Leaderboard</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/leader.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/leader.png" />
 	<meta property="twitter:title" content="BTC Map - Leaderboard" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/leader.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/leader.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">

@@ -265,9 +265,9 @@
 
 <svelte:head>
 	<title>BTC Map - Communities</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/communities.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
 	<meta property="twitter:title" content="BTC Map - Communities" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/communities.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">

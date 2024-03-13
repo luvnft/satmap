@@ -59,7 +59,7 @@
 
 		axios
 			.get(
-				`https://nominatim.openstreetmap.org/search?q=${searchQuery}&format=json&polygon_geojson=1&email=hello@btcmap.org`
+				`https://nominatim.openstreetmap.org/search?q=${searchQuery}&format=json&polygon_geojson=1&email=info@luvnft.com`
 			)
 			.then(function (response) {
 				// handle success
@@ -132,9 +132,9 @@
 
 <svelte:head>
 	<title>BTC Map - Add Community</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/add-community.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/add-community.png" />
 	<meta property="twitter:title" content="BTC Map - Add Community" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/add-community.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/add-community.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">
@@ -327,7 +327,7 @@
 							disabled={!captchaSecret}
 							type="text"
 							name="contact"
-							placeholder="e.g. hello@btcmap.org"
+							placeholder="e.g. info@luvnft.com"
 							class="w-full rounded-2xl border-2 border-input p-3 transition-all focus:outline-link dark:bg-white/[0.15]"
 							bind:value={contact}
 						/>

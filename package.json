@@ -66,7 +66,7 @@
 		"svg-captcha": "^1.4.0",
 		"tippy.js": "^6.3.7"
 	},
-	"description": "Easily find places to spend sats anywhere on the planet.",
+	"description": "The "Google Maps" of Bitcoin Sats, locate businesses that accept Sats worldwide",
 	"repository": "https://github.com/teambtcmap/btcmap.org",
 	"author": "secondl1ght <secondl1ght@protonmail.com>",
 	"license": "AGPL-3.0"

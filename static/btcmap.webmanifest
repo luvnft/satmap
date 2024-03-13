@@ -1,7 +1,7 @@
 {
-	"name": "BTC Map",
-	"short_name": "BTC Map",
-	"description": "Easily find places to spend sats anywhere on the planet.",
+	"name": "SAT Map",
+	"short_name": "SAT Map",
+	"description": "The "Google Maps" of Bitcoin Sats, locate businesses that accept Sats worldwide",
 	"scope": "/",
 	"start_url": "/map",
 	"display": "standalone",

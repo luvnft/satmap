@@ -548,9 +548,9 @@
 
 <svelte:head>
 	<title>BTC Map</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/map.png" />
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/map.png" />
 	<meta property="twitter:title" content="BTC Map" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/map.png" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/map.png" />
 </svelte:head>
 
 <main>
