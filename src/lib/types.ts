@@ -13,12 +13,12 @@ export type Area = {
 };
 
 export type AreaTags = {
-	type: 'community' | 'country';
+	type: AreaType;
 	name: string;
 	continent: Continents;
 	url_alias: string;
 	geo_json: GeoJSON;
-	['icon:square']: string;
+	['icon:square']: string; // countries don't have this tag yet
 	organization?: string;
 	language?: string;
 	population?: string;
@@ -50,13 +50,21 @@ export type AreaTags = {
 	['box:west']?: string;
 };
 
+export type AreaType = 'community' | 'country';
+
 export type Continents =
 	| 'africa'
 	| 'asia'
 	| 'europe'
 	| 'north-america'
 	| 'oceania'
-	| 'south-america';
+	| 'south-america'
+	| 'Africa'
+	| 'Asia'
+	| 'Europe'
+	| 'North America'
+	| 'Oceania'
+	| 'South America';
 
 export type Element = {
 	id: string;
@@ -68,10 +76,25 @@ export type Element = {
 		['payment:uri']?: string;
 		['payment:coinos']?: string;
 		['payment:pouch']?: string;
+		issues?: Issue[];
 	};
 	created_at: string;
 	updated_at: string;
 	deleted_at: string;
+};
+
+export type IssueType =
+	| 'date_format'
+	| 'misspelled_tag'
+	| 'missing_icon'
+	| 'not_verified'
+	| 'out_of_date'
+	| 'out_of_date_soon';
+
+export type Issue = {
+	description: string;
+	severity: number;
+	type: IssueType;
 };
 
 export type ElementOSM = {
@@ -119,7 +142,6 @@ export type ReportTags = {
 	outdated_elements: number;
 	legacy_elements: number;
 	avg_verification_date: string;
-	grade: Grade;
 };
 
 export type Grade = 1 | 2 | 3 | 4 | 5;
@@ -200,6 +222,7 @@ export type ProfileLeaderboard = { id: number; total: number };
 
 export interface LeaderboardArea extends Area {
 	report: Report;
+	grade: Grade;
 }
 
 // tagger
@@ -224,6 +247,24 @@ export interface ActivityEvent extends Event {
 	tagger?: User;
 }
 
+// issues
+
+interface IssueExtended extends Issue {
+	merchantName: string | undefined;
+	merchantId: string;
+}
+
+export type Issues = IssueExtended[];
+
+export type IssueIcon =
+	| 'fa-calendar-days'
+	| 'fa-spell-check'
+	| 'fa-icons'
+	| 'fa-clipboard-question'
+	| 'fa-hourglass-end'
+	| 'fa-list-check'
+	| 'fa-hourglass-half';
+
 // misc
 
 export type Theme = 'light' | 'dark';
@@ -233,3 +274,5 @@ export type DonationType = 'On-chain' | 'Lightning';
 export type DropdownLink = { url: string; external?: boolean; icon: string; title: string };
 
 export type ChartHistory = '7D' | '1M' | '3M' | '6M' | 'YTD' | '1Y' | 'ALL';
+
+export type AreaPageProps = { id: string; name: string; tickets: [] | 'error' };

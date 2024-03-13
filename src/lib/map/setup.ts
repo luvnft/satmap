@@ -1,6 +1,14 @@
 import { InfoTooltip } from '$lib/comp';
-import { boost, exchangeRate, resetBoost, showMore, showTags, theme } from '$lib/store';
-import type { DomEventType, ElementOSM, Leaflet, OSMTags, PayMerchant } from '$lib/types';
+import {
+	boost,
+	exchangeRate,
+	resetBoost,
+	showMore,
+	showTags,
+	taggingIssues,
+	theme
+} from '$lib/store';
+import type { DomEventType, ElementOSM, Issue, Leaflet, OSMTags, PayMerchant } from '$lib/types';
 import { detectTheme, errToast } from '$lib/utils';
 import axios from 'axios';
 import axiosRetry from 'axios-retry';
@@ -86,6 +94,8 @@ export const toggleMapButtons = () => {
 };
 
 export const layers = (leaflet: Leaflet, map: Map) => {
+	const urlBasemap = new URLSearchParams(location.search).get('basemap') || '';
+	const validBasemaps = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'];
 	const theme = detectTheme();
 
 	const osm = leaflet.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -179,7 +189,49 @@ export const layers = (leaflet: Leaflet, map: Map) => {
 		}
 	);
 
-	if (theme === 'dark') {
+	if (validBasemaps.includes(urlBasemap)) {
+		switch (urlBasemap) {
+			case '1':
+				OSMBright.addTo(map);
+				break;
+			case '2':
+				alidadeSmoothDark.addTo(map);
+				break;
+			case '3':
+				osm.addTo(map);
+				break;
+			case '4':
+				alidadeSmooth.addTo(map);
+				break;
+			case '5':
+				imagery.addTo(map);
+				break;
+			case '6':
+				outdoors.addTo(map);
+				break;
+			case '7':
+				terrain.addTo(map);
+				break;
+			case '8':
+				topo.addTo(map);
+				break;
+			case '9':
+				toner.addTo(map);
+				break;
+			case '10':
+				tonerLite.addTo(map);
+				break;
+			case '11':
+				watercolor.addTo(map);
+				break;
+			case '12':
+				osmDE.addTo(map);
+				break;
+			case '13':
+				osmFR.addTo(map);
+				break;
+		}
+	} else if (theme === 'dark') {
 		alidadeSmoothDark.addTo(map);
 	} else {
 		OSMBright.addTo(map);
@@ -658,7 +710,8 @@ export const generateMarker = (
 	L: Leaflet,
 	verifiedDate: number,
 	verify: boolean,
-	boosted: string | undefined
+	boosted: string | undefined,
+	issues?: Issue[] | undefined
 ) => {
 	const generatePopup = () => {
 		const theme = detectTheme();
@@ -676,11 +729,16 @@ export const generateMarker = (
 
 		const verified = verifiedArr(element);
 
+		const thirdParty =
+			element.tags?.['payment:lightning:requires_companion_app'] === 'yes' &&
+			element.tags['payment:lightning:companion_app_url'];
+
 		const paymentMethod =
 			element.tags &&
 			(element.tags['payment:onchain'] ||
 				element.tags['payment:lightning'] ||
-				element.tags['payment:lightning_contactless']);
+				element.tags['payment:lightning_contactless'] ||
+				thirdParty);
 
 		const popupContainer = L.DomUtil.create('div');
 
@@ -848,6 +906,15 @@ export const generateMarker = (
 																<use width='24px' height='24px' href="/icons/popup/spritesheet.svg#tags"></use>
 															</svg>
 															Show Tags
+													</button>
+													
+													<button
+														id='tagging-issues'
+														class='flex items-center !text-primary dark:!text-white hover:!text-link dark:hover:!text-link text-xs transition-colors'>
+															<svg width='24px' height='24px' class='mr-2'>
+																<use width='24px' height='24px' href="/icons/popup/spritesheet.svg#issues"></use>
+															</svg>
+															Tag Issues
 													</button>`
 									: ''
 							}
@@ -886,6 +953,12 @@ ${
 					<span class='block text-mapLabel text-xs'>Payment Methods</span>
 
 					<div class='w-full flex space-x-2 mt-0.5'>
+					${
+						thirdParty
+							? `<a href=${element.tags?.['payment:lightning:companion_app_url']} target="_blank" rel="noreferrer">
+								<i class="fa-solid fa-mobile-screen-button w-6 h-6 !text-primary dark:!text-white hover:!text-link dark:hover:!text-link transition-colors" title="Third party app required"></i>
+							   </a>`
+							: `
 						<img src=${
 							element.tags && element.tags['payment:onchain'] === 'yes'
 								? theme === 'dark'
@@ -943,8 +1016,9 @@ ${
 								? 'Lightning Contactless accepted'
 								: element.tags && element.tags['payment:lightning_contactless'] === 'no'
 									? 'Lightning contactless not accepted'
-									: 'Lightning Contactless unknown'
-						}"/>
+									: 'Lightning contactless unknown'
+						}"/>`
+					}
 					</div>
 				</div>`
 		: ''
@@ -1059,6 +1133,14 @@ ${
 			if (showTagsButton) {
 				showTagsButton.onclick = () => {
 					showTags.set(element.tags || {});
+				};
+			}
+
+			const taggingIssuesButton: HTMLButtonElement | null =
+				popupContainer.querySelector('#tagging-issues');
+			if (taggingIssuesButton) {
+				taggingIssuesButton.onclick = () => {
+					taggingIssues.set(issues || []);
 				};
 			}
 

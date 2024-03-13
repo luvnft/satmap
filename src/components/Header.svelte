@@ -6,7 +6,7 @@
 		{ title: 'Apps', url: '/apps', icon: 'apps' },
 		{ title: 'Contribute', url: '', icon: 'contribute' },
 		{ title: 'Stats', url: '', icon: 'stats' },
-		{ title: 'Communities', url: '', icon: 'communities' },
+		{ title: 'Areas', url: '', icon: 'areas' },
 		{
 			title: 'Wiki',
 			url: '',
@@ -18,7 +18,8 @@
 	const contributeDropdownLinks = [
 		{ title: 'Add Location', url: '/add-location', icon: 'add' },
 		{ title: 'Verify Location', url: '/verify-location', icon: 'verify' },
-		{ title: 'Open Tickets', url: '/tickets', icon: 'ticket' }
+		{ title: 'Open Tickets', url: '/tickets', icon: 'ticket' },
+		{ title: 'Tagging Issues', url: '/tagging-issues', icon: 'issue' }
 	];
 
 	const statsDropdownLinks = [
@@ -27,9 +28,9 @@
 		{ title: 'Leaderboard', url: '/leaderboard', icon: 'leader' }
 	];
 
-	const communitiesDropdownLinks = [
-		{ title: 'Directory', url: '/communities', icon: 'directory' },
-		{ title: 'Leaderboard', url: '/communities/leaderboard', icon: 'leader' }
+	const areasDropdownLinks = [
+		{ title: 'Communities', url: '/communities', icon: 'communities' },
+		{ title: 'Countries', url: '/countries', icon: 'countries' }
 	];
 
 	const wikiDropdownLinks = [
@@ -64,7 +65,7 @@
 					title={link.title}
 					links={contributeDropdownLinks}
 					top="add"
-					bottom="ticket"
+					bottom="issue"
 				/>
 
 				<!-- dropdown menu -->
@@ -77,12 +78,12 @@
 				/>
 
 				<!-- dropdown menu -->
-			{:else if link.title === 'Communities'}
+			{:else if link.title === 'Areas'}
 				<NavDropdownDesktop
 					title={link.title}
-					links={communitiesDropdownLinks}
-					top="directory"
-					bottom="leader"
+					links={areasDropdownLinks}
+					top="communities"
+					bottom="countries"
 				/>
 
 				<!-- dropdown menu -->
@@ -149,8 +150,8 @@
 				<NavDropdownMobile title={link.title} icon={link.icon} links={statsDropdownLinks} />
 
 				<!-- dropdown menu -->
-			{:else if link.title === 'Communities'}
-				<NavDropdownMobile title={link.title} icon={link.icon} links={communitiesDropdownLinks} />
+			{:else if link.title === 'Areas'}
+				<NavDropdownMobile title={link.title} icon={link.icon} links={areasDropdownLinks} />
 
 				<!-- dropdown menu -->
 			{:else if link.title === 'Wiki'}
