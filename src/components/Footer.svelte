@@ -3,12 +3,7 @@
 	import { socials } from '$lib/store';
 
 	const links = [
-		{ link: '/about-us', name: 'About Us' },
-		{ link: '/media', name: 'Media' },
-		{ link: '/license', name: 'License' },
-		{ link: '/privacy-policy', name: 'Privacy' },
-		{ link: 'https://stats.uptimerobot.com/7kgEVtzlV1', name: 'Status' },
-		{ link: 'https://bitcoin.rocks/business/', name: 'Bitcoin for Business', external: true },
+		{ link: 'https://luvnft.com', name: 'LUV NFT' },
 		{ link: '/bitcoin.pdf', name: 'White Paper' },
 		{ link: '/cypherpunks-manifesto.pdf', name: 'Cypherpunks' }
 	];

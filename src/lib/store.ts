@@ -2,11 +2,10 @@ import type { Area, Boost, Element, Event, OSMTags, Report, Theme, User } from '
 import { readable, writable, type Writable } from 'svelte/store';
 
 export const socials = readable({
-	twitter: 'https://twitter.com/btcmap',
-	nostr: 'https://snort.social/p/npub1864jglrrhv6alguwql9pqtmd5296nww5dpcewapmmcazk8vq4mks0tt2tq',
-	discord: 'https://discord.gg/wPqva83uzq',
-	github: 'https://github.com/teambtcmap',
-	amboss: 'https://amboss.space/community/edf8d227-9bc7-4cb2-af2a-66c1b455109a'
+	twitter: 'https://twitter.com/btcsats',
+	nostr: 'https://btcsats.luvnft.com',
+	discord: 'https://discord.gg/F6ddbBGF69',
+	github: 'https://github.com/luvnft/satmap',
 });
 
 export const apps = readable([
@@ -18,25 +17,25 @@ export const apps = readable([
 	},
 	{
 		link: 'https://f-droid.org/en/packages/org.btcmap/',
-		type: 'F-Droid',
+		type: 'SOON',
 		icon: 'f-droid',
 		desc: 'FOSS App Store'
 	},
 	{
 		link: 'https://github.com/teambtcmap/btcmap-android/releases/latest',
-		type: 'APK',
+		type: 'SOON',
 		icon: 'android',
 		desc: 'Direct Download'
 	},
 	{
 		link: 'https://play.google.com/store/apps/details?id=org.btcmap.app',
-		type: 'Play',
+		type: 'SOON',
 		icon: 'play',
 		desc: 'Surveillance Option'
 	},
 	{
 		link: 'https://apps.apple.com/app/btc-world-map/id6443604345',
-		type: 'iOS',
+		type: 'SOON',
 		icon: 'ios',
 		desc: 'Walled Garden Option'
 	}
