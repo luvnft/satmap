@@ -27,7 +27,7 @@
 							? 'text-white'
 							: 'gradient'} text-center text-4xl font-semibold !leading-tight md:text-5xl xl:text-left"
 					>
-						The "Google Maps" of Bitcoin Sats, locate businesses that accept Sats worldwide
+						The Google Maps of Bitcoin Sats, locate businesses that accept Sats worldwide
 					</h1>
 				{:else}
 					<HeaderPlaceholder />
