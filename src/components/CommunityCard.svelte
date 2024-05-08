@@ -39,13 +39,8 @@
 		<a href="/community/{id}" class="space-y-2 text-link transition-colors hover:text-hover">
 			<img
 				src={image
-<<<<<<< HEAD
 					? `https://btcmap.luvnft.com/.netlify/images?url=${image}&fit=cover&w=256&h=256`
 					: '/images/communities/bitcoin.svg'}
-=======
-					? `https://btcmap.org/.netlify/images?url=${image}&fit=cover&w=256&h=256`
-					: '/images/bitcoin.svg'}
->>>>>>> 2a59d8f3ec2d874ce0b1ca1188e4636b5fb94ea6
 				alt={tags.name}
 				class="mx-auto h-20 w-20 rounded-full object-cover"
 				on:error={function () {
