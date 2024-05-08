@@ -92,7 +92,7 @@
 		merchant = $elements.find((element) => element.id == data.id);
 
 		if (!merchant) {
-			console.log('Could not find merchant, please try again or contact W3B Map.');
+			console.log('Could not find merchant, please try again or contact BTC Map.');
 			goto('/404');
 			return;
 		}
@@ -321,7 +321,7 @@
 				$exchangeRate = response.data['USD']['15m'];
 			})
 			.catch(function (error) {
-				errToast('Could not fetch bitcoin exchange rate, please try again or contact W3B Map.');
+				errToast('Could not fetch bitcoin exchange rate, please try again or contact BTC Map.');
 				console.log(error);
 				resetBoostLoading();
 			});
@@ -392,22 +392,22 @@
 </script>
 
 <svelte:head>
-	<title>{name ? name + ' - ' : ''}W3B Map Merchant</title>
+	<title>{name ? name + ' - ' : ''}BTC Map Merchant</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/merchant.png" />
-	<meta property="twitter:title" content="{name ? name + ' - ' : ''}W3B Map Merchant" />
+	<meta property="twitter:title" content="{name ? name + ' - ' : ''}BTC Map Merchant" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/merchant.png" />
 
 	{#if payment && payment.type === 'uri' && payment.url?.startsWith('lightning:')}
 		<meta name="lightning" content="lnurlp:{payment.url.slice(10, payment.url.length)}" />
 		<meta property="alby:image" content="/images/logo.svg" />
-		<meta property="alby:name" content={name || 'W3B Map Merchant'} />
+		<meta property="alby:name" content={name || 'BTC Map Merchant'} />
 	{:else}
 		<meta
 			name="lightning"
-			content="lnurlp:lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp"
+			content="lnurlp:LNURL1DP68GURN8GHJ7CM0WFJJUCN5VDKKZUPWDAEXWTMVDE6HYMRS9ARKXVN4W5EQPSYZ34"
 		/>
 		<meta property="alby:image" content="/images/logo.svg" />
-		<meta property="alby:name" content="W3B Map" />
+		<meta property="alby:name" content="BTC Map" />
 	{/if}
 </svelte:head>
 
@@ -436,7 +436,7 @@
 					{/if}
 
 					<h1 class="text-4xl font-semibold !leading-tight text-primary dark:text-white">
-						{name || 'W3B Map Merchant'}
+						{name || 'BTC Map Merchant'}
 					</h1>
 
 					{#if address}
@@ -893,7 +893,7 @@
 
 			<p class="text-center text-sm text-body dark:text-white md:text-left">
 				*More information on bitcoin mapping tags can be found <a
-					href="https://wiki.btcmap.org/general/tagging-instructions.html#tagging-guidance"
+					href="https://wiki.btcmap.luvnft.com/general/tagging-instructions.html#tagging-guidance"
 					target="_blank"
 					rel="noreferrer"
 					class="text-link transition-colors hover:text-hover">here</a

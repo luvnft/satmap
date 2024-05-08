@@ -17,10 +17,10 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Tagging Issues</title>
-	<meta property="og:image" content="https://btcmap.org/images/og/home.png" />
-	<meta property="twitter:title" content="W3B Map - Tagging Issues" />
-	<meta property="twitter:image" content="https://btcmap.org/images/og/home.png" />
+	<title>BTC Map - Tagging Issues</title>
+	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
+	<meta property="twitter:title" content="BTC Map - Tagging Issues" />
+	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
 <div class="bg-teal dark:bg-dark">
@@ -47,7 +47,7 @@
 
 			<p class="text-center text-xl text-primary dark:text-white lg:text-left">
 				More information about how to get involved can be found on our <a
-					href="https://wiki.btcmap.org/general/tagging-instructions.html"
+					href="https://wiki.btcmap.luvnft.com/general/tagging-instructions.html"
 					class="text-link transition-colors hover:text-hover">Tagging Instructions</a
 				>
 				Wiki page.

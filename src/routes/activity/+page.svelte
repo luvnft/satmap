@@ -82,9 +82,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Activity</title>
+	<title>BTC Map - Activity</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/activity.png" />
-	<meta property="twitter:title" content="W3B Map - Activity" />
+	<meta property="twitter:title" content="BTC Map - Activity" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/activity.png" />
 </svelte:head>
 
@@ -113,7 +113,7 @@
 
 			<p class="text-center text-xl text-primary dark:text-white lg:text-left">
 				You too can be a shadowy supertagging legend! What are you waiting for? <a
-					href="https://wiki.btcmap.org/general/tagging-instructions.html#shadowy-supertaggers-"
+					href="https://wiki.btcmap.luvnft.com/general/tagging-instructions.html#shadowy-supertaggers-"
 					class="text-link transition-colors hover:text-hover">Get taggin’!</a
 				>
 			</p>

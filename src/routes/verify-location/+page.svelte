@@ -193,7 +193,7 @@
 			})
 			.catch(function (error) {
 				// handle error
-				errToast('Could not fetch captcha, please try again or contact W3B Map.');
+				errToast('Could not fetch captcha, please try again or contact BTC Map.');
 				console.log(error);
 			});
 	};
@@ -237,7 +237,7 @@
 					if (error.response.data.message.includes('Captcha')) {
 						errToast(error.response.data.message);
 					} else {
-						errToast('Form submission failed, please try again or contact W3B Map.');
+						errToast('Form submission failed, please try again or contact BTC Map.');
 					}
 
 					console.log(error);
@@ -307,9 +307,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Verify Location</title>
+	<title>BTC Map - Verify Location</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/verify.png" />
-	<meta property="twitter:title" content="W3B Map - Verify Location" />
+	<meta property="twitter:title" content="BTC Map - Verify Location" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/verify.png" />
 </svelte:head>
 
@@ -346,7 +346,7 @@
 						class="text-link transition-colors hover:text-hover">OpenStreetMap</a
 					>? You can check out our
 					<a
-						href="https://wiki.btcmap.org/general/tagging-instructions.html"
+						href="https://wiki.btcmap.luvnft.com/general/tagging-instructions.html"
 						target="_blank"
 						rel="noreferrer"
 						class="text-link transition-colors hover:text-hover">Wiki</a

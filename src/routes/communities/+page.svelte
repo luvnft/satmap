@@ -284,9 +284,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Communities</title>
+	<title>BTC Map - Communities</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
-	<meta property="twitter:title" content="W3B Map - Communities" />
+	<meta property="twitter:title" content="BTC Map - Communities" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
 </svelte:head>
 

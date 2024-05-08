@@ -33,7 +33,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				used.push(hash);
 
 				return axios
-					.get(`https://api.btcmap.org/v2/elements/${element}`)
+					.get(`https://api.btcmap.luvnft.com/v2/elements/${element}`)
 					.then(function (response) {
 						let expires;
 						const currentBoost =
@@ -50,7 +50,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 						return axios
 							.patch(
-								`https://api.btcmap.org/v2/elements/${element}`,
+								`https://api.btcmap.luvnft.com/v2/elements/${element}`,
 								{ tags: { 'boost:expires': `${expires.toISOString()}` } },
 								{ headers }
 							)
@@ -59,12 +59,12 @@ export const POST: RequestHandler = async ({ request }) => {
 							})
 							.catch(function (err) {
 								console.log(err);
-								error(400, 'Could not finalize boost, please contact W3B Map.');
+								error(400, 'Could not finalize boost, please contact BTC Map.');
 							});
 					})
 					.catch(function (err) {
 						console.log(err);
-						error(400, 'Could not finalize boost, please contact W3B Map.');
+						error(400, 'Could not finalize boost, please contact BTC Map.');
 					});
 			} else {
 				return;
@@ -72,7 +72,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		})
 		.catch(function (err) {
 			console.log(err);
-			error(400, 'Could not finalize boost, please contact W3B Map.');
+			error(400, 'Could not finalize boost, please contact BTC Map.');
 		});
 
 	return json({ status: boost });

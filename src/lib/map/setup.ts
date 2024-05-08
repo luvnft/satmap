@@ -287,7 +287,7 @@ export const support = () => {
 	supportAttribution.style.borderRadius = '8px 0 0 0';
 	supportAttribution.style.filter = 'drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.3))';
 	supportAttribution.innerHTML =
-		'<a href="/support-us" class="!text-link hover:!text-hover !no-underline transition-colors" title="Support with sats">Support</a> W3B Map';
+		'<a href="/support-us" class="!text-link hover:!text-hover !no-underline transition-colors" title="Support with sats">Support</a> BTC Map';
 	supportAttribution.classList.add(
 		'dark:!bg-dark',
 		'dark:!text-white',
@@ -919,7 +919,7 @@ export const generateMarker = (
 							}
 
 							<a
-								href="https://wiki.btcmap.org/general/map-legend.html"
+								href="https://wiki.btcmap.luvnft.com/general/map-legend.html"
 								target="_blank"
 								rel="noreferrer"
 								class='flex items-center !text-primary dark:!text-white hover:!text-link dark:hover:!text-link text-xs transition-colors'>
@@ -1024,7 +1024,7 @@ ${
 }
 
 				<div>
-					<span class='block text-mapLabel text-xs' title="Completed by W3B Map community members">Last Surveyed</span>
+					<span class='block text-mapLabel text-xs' title="Completed by BTC Map community members">Last Surveyed</span>
 					<span class='block text-body dark:text-white'>
 					${
 						verified.length
@@ -1180,7 +1180,7 @@ ${
 							})
 							.catch(function (error) {
 								errToast(
-									'Could not fetch bitcoin exchange rate, please try again or contact W3B Map.'
+									'Could not fetch bitcoin exchange rate, please try again or contact BTC Map.'
 								);
 								console.log(error);
 								resetButton();

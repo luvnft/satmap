@@ -27,7 +27,7 @@
 		},
 		{
 			title: 'OG Supertagger',
-			desc: 'Contribute to W3B Map within the first 3 months',
+			desc: 'Contribute to BTC Map within the first 3 months',
 			icon: 'og-supertagger'
 		},
 		{
@@ -57,7 +57,7 @@
 		},
 		{
 			title: 'Supporter',
-			desc: 'Make an annual donation to W3B Map',
+			desc: 'Make an annual donation to BTC Map',
 			icon: 'supporter'
 		}
 	];
@@ -162,9 +162,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Badges</title>
+	<title>BTC Map - Badges</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/badges.png" />
-	<meta property="twitter:title" content="W3B Map - Badges" />
+	<meta property="twitter:title" content="BTC Map - Badges" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/badges.png" />
 </svelte:head>
 
@@ -185,7 +185,7 @@
 			{/if}
 
 			<p class="mx-auto w-full text-lg text-primary dark:text-white lg:w-[700px]">
-				You can earn badges for your W3B Map contributions that will be displayed on your profile.
+				You can earn badges for your BTC Map contributions that will be displayed on your profile.
 				Have a badge idea? Let us know!
 			</p>
 

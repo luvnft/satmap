@@ -17,7 +17,7 @@
 	export let data: PageData;
 
 	let onchain = data.address;
-	const lnurlp = 'lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp';
+	const lnurlp = 'LNURL1DP68GURN8GHJ7CM0WFJJUCN5VDKKZUPWDAEXWTMVDE6HYMRS9ARKXVN4W5EQPSYZ34';
 
 	let showQr = false;
 	let network: DonationType;
@@ -34,7 +34,7 @@
 			{ width: window.innerWidth > 640 ? 256 : 200 },
 			function (error: any) {
 				if (error) {
-					warningToast('Could not generate QR, please try again or contact W3B Map.');
+					warningToast('Could not generate QR, please try again or contact BTC Map.');
 					console.error(error);
 				}
 			}
@@ -49,9 +49,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Support Us</title>
+	<title>BTC Map - Support Us</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/support.png" />
-	<meta property="twitter:title" content="W3B Map - Support Us" />
+	<meta property="twitter:title" content="BTC Map - Support Us" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/support.png" />
 </svelte:head>
 
@@ -65,14 +65,14 @@
 						? 'text-white'
 						: 'gradient'} text-4xl font-semibold !leading-tight md:text-5xl"
 				>
-					Help us place bitcoin on the map.
+					Help place bitcoin on the map.
 				</h1>
 			{:else}
 				<HeaderPlaceholder />
 			{/if}
 
 			<h2 class="mx-auto w-full text-xl font-semibold text-primary dark:text-white lg:w-[800px]">
-				btcmap.luvnft.com is powered by a Blockchain nonprofit. We rely on donations and sponsorship to
+				btcmap.luvnft.com is a free and open source project (FOSS). We rely on donations and sponsorship to
 				continue.
 
 				<br /><br />

@@ -8,7 +8,7 @@ axiosRetry(axios, { retries: 3, retryDelay: axiosRetry.exponentialDelay });
 export const load: PageLoad = async ({ params }) => {
 	const { id } = params;
 	try {
-		const response = await axios.get(`https://api.btcmap.org/v2/elements/${id}`);
+		const response = await axios.get(`https://api.btcmap.luvnft.com/v2/elements/${id}`);
 
 		const data = response.data;
 

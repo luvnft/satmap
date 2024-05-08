@@ -23,7 +23,7 @@ export const GET: RequestHandler = async ({ url }) => {
 			{
 				out: false,
 				amount: `${amount}`,
-				memo: `W3B Map boost ${name} for ${time} month${Number(time) > 1 ? 's' : ''}`,
+				memo: `BTC Map boost ${name} for ${time} month${Number(time) > 1 ? 's' : ''}`,
 				unit: 'sat'
 			},
 			{ headers }
@@ -33,7 +33,7 @@ export const GET: RequestHandler = async ({ url }) => {
 		})
 		.catch(function (err) {
 			console.log(err);
-			error(400, 'Could not generate invoice, please try again or contact W3B Map.');
+			error(400, 'Could not generate invoice, please try again or contact BTC Map.');
 		});
 
 	return new Response(JSON.stringify(invoice));

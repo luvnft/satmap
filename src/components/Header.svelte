@@ -36,13 +36,13 @@
 	const wikiDropdownLinks = [
 		{
 			title: 'General',
-			url: 'https://wiki.btcmap.org',
+			url: 'https://wiki.btcmap.luvnft.com',
 			icon: 'general',
 			external: true
 		},
 		{
 			title: 'API',
-			url: 'https://wiki.btcmap.org/api/introduction.html',
+			url: 'https://wiki.btcmap.luvnft.com/api/introduction.html',
 			icon: 'api',
 			external: true
 		}

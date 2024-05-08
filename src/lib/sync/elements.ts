@@ -31,7 +31,7 @@ export const elementsSync = async () => {
 				do {
 					try {
 						const response = await axios.get<Element[]>(
-							`https://api.btcmap.org/v2/elements?updated_since=${updatedSince}&limit=${limit}`
+							`https://api.btcmap.luvnft.com/v2/elements?updated_since=${updatedSince}&limit=${limit}`
 						);
 
 						updatedSince = response.data[response.data.length - 1]['updated_at'];
@@ -43,7 +43,7 @@ export const elementsSync = async () => {
 						response.data.forEach((data) => elementsData.push(data));
 					} catch (error) {
 						elementError.set(
-							'Could not load elements from API, please try again or contact W3B Map.'
+							'Could not load elements from API, please try again or contact BTC Map.'
 						);
 						console.log(error);
 						break;
@@ -64,7 +64,7 @@ export const elementsSync = async () => {
 						.catch(function (err) {
 							elements.set(elementsFiltered);
 							elementError.set(
-								'Could not store elements locally, please try again or contact W3B Map.'
+								'Could not store elements locally, please try again or contact BTC Map.'
 							);
 							console.log(err);
 						});
@@ -87,7 +87,7 @@ export const elementsSync = async () => {
 				do {
 					try {
 						const response = await axios.get<Element[]>(
-							`https://api.btcmap.org/v2/elements?updated_since=${updatedSince}&limit=${limit}`
+							`https://api.btcmap.luvnft.com/v2/elements?updated_since=${updatedSince}&limit=${limit}`
 						);
 
 						// update new records if they exist
@@ -125,7 +125,7 @@ export const elementsSync = async () => {
 						useCachedData = true;
 
 						elementError.set(
-							'Could not update elements from API, please try again or contact W3B Map.'
+							'Could not update elements from API, please try again or contact BTC Map.'
 						);
 						console.error(error);
 						break;
@@ -151,7 +151,7 @@ export const elementsSync = async () => {
 							mapUpdates.set(true);
 
 							elementError.set(
-								'Could not update elements locally, please try again or contact W3B Map.'
+								'Could not update elements locally, please try again or contact BTC Map.'
 							);
 							console.log(err);
 						});
@@ -160,7 +160,7 @@ export const elementsSync = async () => {
 		})
 
 		.catch(async function (err) {
-			elementError.set('Could not load elements locally, please try again or contact W3B Map.');
+			elementError.set('Could not load elements locally, please try again or contact BTC Map.');
 			console.log(err);
 
 			// add to sync count to only show data refresh after initial load
@@ -174,7 +174,7 @@ export const elementsSync = async () => {
 			do {
 				try {
 					const response = await axios.get<Element[]>(
-						`https://api.btcmap.org/v2/elements?updated_since=${updatedSince}&limit=${limit}`
+						`https://api.btcmap.luvnft.com/v2/elements?updated_since=${updatedSince}&limit=${limit}`
 					);
 
 					updatedSince = response.data[response.data.length - 1]['updated_at'];
@@ -186,7 +186,7 @@ export const elementsSync = async () => {
 					response.data.forEach((data) => elementsData.push(data));
 				} catch (error) {
 					elementError.set(
-						'Could not load elements from API, please try again or contact W3B Map.'
+						'Could not load elements from API, please try again or contact BTC Map.'
 					);
 					console.log(error);
 					break;

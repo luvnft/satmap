@@ -9,7 +9,7 @@
 	<div class="my-4 space-y-2 p-4">
 		<a href="/country/{id}" class="space-y-2 text-link transition-colors hover:text-hover">
 			<img
-				src={`https://static.btcmap.org/images/countries/${id}.svg`}
+				src={`https://static.btcmap.luvnft.com/images/countries/${id}.svg`}
 				alt={name}
 				class="mx-auto h-20 w-20 rounded-full object-cover"
 				on:error={function () {

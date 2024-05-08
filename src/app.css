@@ -14,7 +14,7 @@
 	}
 
 	::selection {
-		@apply bg-[#53c5d5] text-white;
+		@apply bg-[#000000] text-white;
 	}
 }
 

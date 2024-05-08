@@ -20,6 +20,6 @@ export const load: PageServerLoad = async () => {
 		return { address: address.data.address };
 	} catch (error) {
 		console.log(error);
-		return { address: 'bc1qqmy5c03clt6a72aq0ys5jzm2sjnws3qr05nvmz' };
+		return { address: 'bc1phskpnkg7s2lgc5lhwu7zklz9dyfn2ncqa566udqq7wq288z2fq2qea7p2p' };
 	}
 };

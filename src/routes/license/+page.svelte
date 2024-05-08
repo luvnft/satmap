@@ -3,9 +3,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - License</title>
+	<title>BTC Map - License</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="W3B Map - License" />
+	<meta property="twitter:title" content="BTC Map - License" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
@@ -14,9 +14,9 @@
 	<div class="mx-auto w-10/12 xl:w-[1200px]">
 		<main class="mb-20 mt-10 space-y-5 text-body dark:text-white">
 			<p class="text-center font-semibold text-primary dark:text-white">
-				W3B Map - The Google Maps of Bitcoin Sats that you own as a LUV NFT, locate businesses that accept Love Money ($LUV L$VE $RNT LUV NFT) worldwide
+				BTC Map - Explore the BTC Map to buy/sell 10m x 10m Bitcoin NFT land and discover nearby businesses accepting Bitcoin Sats.
 				<br />
-				Copyright &#169; 2022-{new Date().getFullYear()} W3B Map
+				Copyright &#169; 2022-{new Date().getFullYear()} BTC Map
 				<br />
 				<a
 					href="mailto:info@luvnft.com"

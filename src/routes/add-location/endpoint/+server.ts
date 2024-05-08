@@ -58,7 +58,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	secret += decrypt.final('utf8');
 
 	if (captchaTest !== secret) {
-		error(400, 'Captcha test failed, please try again or contact W3B Map.');
+		error(400, 'Captcha test failed, please try again or contact BTC Map.');
 	}
 
 	if (used.includes(captchaSecret)) {
@@ -109,7 +109,7 @@ Contact: ${contact}
 Status: Todo
 Created at: ${new Date(Date.now()).toISOString()}
 
-If you are a new contributor please read our Tagging Instructions [here](https://wiki.btcmap.org/general/tagging-instructions.html).`,
+If you are a new contributor please read our Tagging Instructions [here](https://wiki.btcmap.luvnft.com/general/tagging-instructions.html).`,
 				labels:
 					country && communities.length
 						? [...standardLabels, country, ...communities]

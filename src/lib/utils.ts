@@ -136,11 +136,11 @@ export const getIssueHelpLink = (type: IssueType) => {
 		case 'out_of_date':
 		case 'out_of_date_soon':
 		case 'not_verified':
-			return 'https://wiki.btcmap.org/general/outdated';
+			return 'https://wiki.btcmap.luvnft.com/general/outdated';
 		case 'date_format':
-			return 'https://wiki.btcmap.org/general/tagging-instructions#verified-tags---more-information';
+			return 'https://wiki.btcmap.luvnft.com/general/tagging-instructions#verified-tags---more-information';
 		case 'misspelled_tag':
-			return 'https://wiki.btcmap.org/general/tagging-instructions#required-tags';
+			return 'https://wiki.btcmap.luvnft.com/general/tagging-instructions#required-tags';
 		case 'missing_icon':
 		default:
 			return undefined;

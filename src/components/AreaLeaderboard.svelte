@@ -154,7 +154,7 @@
 					position={index + 1}
 					avatar={type === 'community'
 						? item.tags['icon:square']
-						: `https://static.btcmap.org/images/countries/${item.id}.svg`}
+						: `https://static.btcmap.luvnft.com/images/countries/${item.id}.svg`}
 					name={item.tags.name}
 					sponsor={item.tags.sponsor ? true : false}
 					id={item.id}

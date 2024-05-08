@@ -1,13 +1,13 @@
 <script lang="ts">
 	import { Footer, Header } from '$lib/comp';
 
-	const brandColors = ['#10B981', '#53C5D5', '#051173', '#0891B2', '#E4EBEC', '#164E63', '#155E75'];
+	const brandColors = ['#10B981', '#000000', '#051173', '#0891B2', '#E4EBEC', '#164E63', '#155E75'];
 
 	const brand = [
 		{ link: '/images/hero-mobile-example.webp', name: 'App Screenshot' },
-		{ link: '/images/logo.svg', name: 'W3B Map Logo' },
+		{ link: '/images/logo.svg', name: 'BTC Map Logo' },
 		{ link: '/images/supertagger.svg', name: 'Shadowy Supertagger' },
-		{ link: '/images/supertagger-king.svg', name: 'Shadowy Supertagger - Leader' }
+		{ link: '/images/supertagger-king.png', name: 'Shadowy Supertagger - Leader' }
 	];
 
 	const promotional = [
@@ -45,9 +45,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Media</title>
+	<title>BTC Map - Media</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="W3B Map - Media" />
+	<meta property="twitter:title" content="BTC Map - Media" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 

@@ -19,7 +19,7 @@ export const GET: RequestHandler = async ({ url }) => {
 		})
 		.catch(function (err) {
 			console.log(err);
-			error(400, 'Could not check invoice status, please try again or contact W3B Map.');
+			error(400, 'Could not check invoice status, please try again or contact BTC Map.');
 		});
 
 	return new Response(JSON.stringify(status));

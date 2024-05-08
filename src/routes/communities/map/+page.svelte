@@ -78,11 +78,7 @@
 
 			popupContainer.innerHTML = `
 				<div class='text-center space-y-2'>
-<<<<<<< HEAD
-					<img loading='lazy' src=${`https://btcmap.luvnft.com/.netlify/images?url=${community.tags['icon:square']}&fit=cover&w=256&h=256`} alt='avatar' class='w-24 h-24 rounded-full mx-auto' title='Community icon' onerror="this.src='/images/communities/bitcoin.svg'" />
-=======
-					<img loading='lazy' src=${`https://btcmap.org/.netlify/images?url=${community.tags['icon:square']}&fit=cover&w=256&h=256`} alt='avatar' class='w-24 h-24 rounded-full mx-auto' title='Community icon' onerror="this.src='/images/bitcoin.svg'" />
->>>>>>> 2a59d8f3ec2d874ce0b1ca1188e4636b5fb94ea6
+					<img loading='lazy' src=${`https://btcmap.luvnft.com/.netlify/images?url=${community.tags['icon:square']}&fit=cover&w=256&h=256`} alt='avatar' class='w-24 h-24 rounded-full mx-auto' title='Community icon' onerror="this.src='/images/bitcoin.svg'" />
 
 					<span class='text-primary dark:text-white font-semibold text-xl' title='Community name'>${
 						community.tags.name
@@ -101,7 +97,7 @@
 					${
 						community.tags.sponsor
 							? `<span class="block gradient-bg w-32 mx-auto py-1 text-xs text-white font-semibold rounded-full" title='Supporter'>
-						W3B Map Sponsor
+						BTC Map Sponsor
 					</span>`
 							: ''
 					}
@@ -181,7 +177,7 @@
 			} catch (error) {
 				map.setView([0, 0], 3);
 				errToast(
-					'Could not set map view to provided coordinates, please try again or contact W3B Map.'
+					'Could not set map view to provided coordinates, please try again or contact BTC Map.'
 				);
 				console.log(error);
 			}
@@ -197,7 +193,7 @@
 			} catch (error) {
 				map.setView([0, 0], 3);
 				errToast(
-					'Could not set map view to provided coordinates, please try again or contact W3B Map.'
+					'Could not set map view to provided coordinates, please try again or contact BTC Map.'
 				);
 				console.log(error);
 			}
@@ -239,7 +235,7 @@
 				} catch (error) {
 					map.setView([0, 0], 3);
 					errToast(
-						'Could not set map view to provided coordinates, please try again or contact W3B Map.'
+						'Could not set map view to provided coordinates, please try again or contact BTC Map.'
 					);
 					console.log(error);
 				}
@@ -294,9 +290,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Community Map</title>
+	<title>BTC Map - Community Map</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
-	<meta property="twitter:title" content="W3B Map - Community Map" />
+	<meta property="twitter:title" content="BTC Map - Community Map" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
 </svelte:head>
 

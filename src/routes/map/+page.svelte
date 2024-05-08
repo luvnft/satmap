@@ -297,7 +297,7 @@
 					map.setView([0, 0], 3);
 					mapCenter = map.getCenter();
 					errToast(
-						'Could not set map view to provided coordinates, please try again or contact W3B Map.'
+						'Could not set map view to provided coordinates, please try again or contact BTC Map.'
 					);
 					console.log(error);
 				}
@@ -320,7 +320,7 @@
 					map.setView([0, 0], 3);
 					mapCenter = map.getCenter();
 					errToast(
-						'Could not set map view to provided coordinates, please try again or contact W3B Map.'
+						'Could not set map view to provided coordinates, please try again or contact BTC Map.'
 					);
 					console.log(error);
 				}
@@ -345,7 +345,7 @@
 					.catch(function (err) {
 						map.setView([0, 0], 3);
 						errToast(
-							'Could not set map view to cached coords, please try again or contact W3B Map.'
+							'Could not set map view to cached coords, please try again or contact BTC Map.'
 						);
 						console.log(err);
 					});
@@ -561,9 +561,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map</title>
+	<title>BTC Map</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/map.png" />
-	<meta property="twitter:title" content="W3B Map" />
+	<meta property="twitter:title" content="BTC Map" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/map.png" />
 </svelte:head>
 

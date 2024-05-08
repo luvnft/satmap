@@ -14,9 +14,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Apps</title>
+	<title>BTC Map - Apps</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/apps.png" />
-	<meta property="twitter:title" content="W3B Map - Apps" />
+	<meta property="twitter:title" content="BTC Map - Apps" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/apps.png" />
 </svelte:head>
 

@@ -48,7 +48,7 @@
 			})
 			.catch(function (error) {
 				// handle error
-				errToast('Could not load open tickets, please try again or contact W3B Map.');
+				errToast('Could not load open tickets, please try again or contact BTC Map.');
 				console.log(error);
 			});
 	};
@@ -64,9 +64,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Open Tickets</title>
+	<title>BTC Map - Open Tickets</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="W3B Map - Open Tickets" />
+	<meta property="twitter:title" content="BTC Map - Open Tickets" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
@@ -98,12 +98,12 @@
 
 			<p class="text-center text-xl text-primary dark:text-white lg:text-left">
 				More information on how to get involved can be found in our <a
-					href="https://wiki.btcmap.org/general/tagging-instructions.html"
+					href="https://wiki.btcmap.luvnft.com/general/tagging-instructions.html"
 					class="text-link transition-colors hover:text-hover">Tagging Instructions</a
 				>
 				and
 				<a
-					href="https://wiki.btcmap.org/general/geojson-areas.html"
+					href="https://wiki.btcmap.luvnft.com/general/geojson-areas.html"
 					class="text-link transition-colors hover:text-hover">Creating GeoJSON Areas</a
 				> Wiki pages.
 			</p>

@@ -26,7 +26,7 @@ export const reportsSync = async () => {
 				do {
 					try {
 						const response = await axios.get<Report[]>(
-							`https://api.btcmap.org/v2/reports?updated_since=${updatedSince}&limit=${limit}`
+							`https://api.btcmap.luvnft.com/v2/reports?updated_since=${updatedSince}&limit=${limit}`
 						);
 
 						updatedSince = response.data[response.data.length - 1]['updated_at'];
@@ -38,7 +38,7 @@ export const reportsSync = async () => {
 						response.data.forEach((data) => reportsData.push(data));
 					} catch (error) {
 						reportError.set(
-							'Could not load reports from API, please try again or contact W3B Map.'
+							'Could not load reports from API, please try again or contact BTC Map.'
 						);
 						console.log(error);
 						break;
@@ -59,7 +59,7 @@ export const reportsSync = async () => {
 						.catch(function (err) {
 							reports.set(reportsFiltered);
 							reportError.set(
-								'Could not store reports locally, please try again or contact W3B Map.'
+								'Could not store reports locally, please try again or contact BTC Map.'
 							);
 							console.log(err);
 						});
@@ -78,7 +78,7 @@ export const reportsSync = async () => {
 				do {
 					try {
 						const response = await axios.get<Report[]>(
-							`https://api.btcmap.org/v2/reports?updated_since=${updatedSince}&limit=${limit}`
+							`https://api.btcmap.luvnft.com/v2/reports?updated_since=${updatedSince}&limit=${limit}`
 						);
 
 						// update new records if they exist
@@ -116,7 +116,7 @@ export const reportsSync = async () => {
 						useCachedData = true;
 
 						reportError.set(
-							'Could not update reports from API, please try again or contact W3B Map.'
+							'Could not update reports from API, please try again or contact BTC Map.'
 						);
 						console.error(error);
 						break;
@@ -136,7 +136,7 @@ export const reportsSync = async () => {
 							reports.set(reportsData);
 
 							reportError.set(
-								'Could not update reports locally, please try again or contact W3B Map.'
+								'Could not update reports locally, please try again or contact BTC Map.'
 							);
 							console.log(err);
 						});
@@ -145,7 +145,7 @@ export const reportsSync = async () => {
 		})
 
 		.catch(async function (err) {
-			reportError.set('Could not load reports locally, please try again or contact W3B Map.');
+			reportError.set('Could not load reports locally, please try again or contact BTC Map.');
 			console.log(err);
 
 			let updatedSince = '2022-01-01T00:00:00.000Z';
@@ -155,7 +155,7 @@ export const reportsSync = async () => {
 			do {
 				try {
 					const response = await axios.get<Report[]>(
-						`https://api.btcmap.org/v2/reports?updated_since=${updatedSince}&limit=${limit}`
+						`https://api.btcmap.luvnft.com/v2/reports?updated_since=${updatedSince}&limit=${limit}`
 					);
 
 					updatedSince = response.data[response.data.length - 1]['updated_at'];
@@ -166,7 +166,7 @@ export const reportsSync = async () => {
 					reportsData = reportsUpdated;
 					response.data.forEach((data) => reportsData.push(data));
 				} catch (error) {
-					reportError.set('Could not load reports from API, please try again or contact W3B Map.');
+					reportError.set('Could not load reports from API, please try again or contact BTC Map.');
 					console.log(error);
 					break;
 				}

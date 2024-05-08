@@ -119,7 +119,7 @@
 		});
 
 		if (!areaFound) {
-			console.log(`Could not find ${type}, please try again or contact W3B Map.`);
+			console.log(`Could not find ${type}, please try again or contact BTC Map.`);
 			goto('/404');
 			return;
 		}
@@ -130,7 +130,7 @@
 
 		if (!areaReports.length) {
 			console.log(
-				`Could not find any ${type} reports, please try again tomorrow or contact W3B Map.`
+				`Could not find any ${type} reports, please try again tomorrow or contact BTC Map.`
 			);
 			goto('/404');
 			return;
@@ -140,8 +140,8 @@
 
 		avatar =
 			type === 'community'
-				? `https://btcmap.org/.netlify/images?url=${area['icon:square']}&fit=cover&w=256&h=256`
-				: `https://static.btcmap.org/images/countries/${areaFound.id}.svg`;
+				? `https://btcmap.luvnft.com/.netlify/images?url=${area['icon:square']}&fit=cover&w=256&h=256`
+				: `https://static.btcmap.luvnft.com/images/countries/${areaFound.id}.svg`;
 		continent = area.continent;
 
 		if (type === 'community') {
@@ -727,7 +727,7 @@
 	const tickets = data.tickets;
 	const ticketError = tickets === 'error' ? true : false;
 
-	$: ticketError && errToast('Could not load open tickets, please try again or contact W3B Map.');
+	$: ticketError && errToast('Could not load open tickets, please try again or contact BTC Map.');
 
 	const add =
 		tickets && tickets.length && !ticketError
@@ -921,7 +921,7 @@
 				content="lnurlp:LNURL1DP68GURN8GHJ7CM0WFJJUCN5VDKKZUPWDAEXWTMVDE6HYMRS9ARKXVN4W5EQPSYZ34"
 			/>
 			<meta property="alby:image" content="/images/logo.svg" />
-			<meta property="alby:name" content="W3B Map" />
+			<meta property="alby:name" content="BTC Map" />
 		{/if}
 	{/if}
 </svelte:head>
@@ -942,7 +942,7 @@
 				<div class="mx-auto h-32 w-32 animate-pulse rounded-full bg-link/50" />
 			{/if}
 			<h1 class="text-4xl font-semibold !leading-tight text-primary dark:text-white">
-				{name || 'W3B Map Area'}
+				{name || 'BTC Map Area'}
 			</h1>
 			{#if org}
 				<OrgBadge {org} />
@@ -1023,7 +1023,7 @@
 		<h3
 			class="rounded-t-3xl border border-b-0 border-statBorder p-5 text-center text-lg font-semibold text-primary dark:bg-white/10 dark:text-white md:text-left"
 		>
-			{name || 'W3B Map Area'} Map
+			{name || 'BTC Map Area'} Map
 			<div class="flex items-center space-x-1 text-link">
 				{#if dataInitialized}
 					<div class="flex items-center space-x-1">
@@ -1120,7 +1120,7 @@
 			<h3
 				class="border-b border-statBorder p-5 text-center text-lg font-semibold text-primary dark:text-white md:text-left"
 			>
-				{name || 'W3B Map Area'} Supertaggers
+				{name || 'BTC Map Area'} Supertaggers
 			</h3>
 			<div bind:this={taggerDiv} class="hide-scroll max-h-[375px] overflow-scroll p-1">
 				{#if taggers && taggers.length}
@@ -1176,7 +1176,7 @@
 			<h3
 				class="border-b border-statBorder p-5 text-center text-lg font-semibold text-primary dark:text-white md:text-left"
 			>
-				{name || 'W3B Map Area'} Activity
+				{name || 'BTC Map Area'} Activity
 			</h3>
 
 			<div
@@ -1233,7 +1233,7 @@
 	</section>
 
 	<IssuesTable
-		title="{name || 'W3B Map Area'} Tagging Issues"
+		title="{name || 'BTC Map Area'} Tagging Issues"
 		{issues}
 		loading={!dataInitialized}
 	/>
@@ -1242,7 +1242,7 @@
 		<div class="w-full rounded-3xl border border-statBorder dark:bg-white/10">
 			<div class="p-5 text-lg font-semibold text-primary dark:text-white">
 				<h3 class="mb-2 text-center md:text-left">
-					{name || 'W3B Map Area'} Tickets
+					{name || 'BTC Map Area'} Tickets
 					{#if tickets && !ticketError}
 						<span class="text-base">({totalTickets})</span>
 					{/if}
@@ -1335,7 +1335,7 @@
 			<h3
 				class="border-b border-statBorder p-5 text-center text-lg font-semibold text-primary dark:text-white md:text-left"
 			>
-				{name || 'W3B Map Area'} Charts
+				{name || 'BTC Map Area'} Charts
 			</h3>
 			<div class="border-b border-statBorder p-5">
 				<div class="relative">
@@ -1408,7 +1408,7 @@
 
 	<p class="text-center text-sm text-body dark:text-white md:text-left">
 		*More information on bitcoin mapping tags can be found <a
-			href="https://wiki.btcmap.org/general/tagging-instructions.html#tagging-guidance"
+			href="https://wiki.btcmap.luvnft.com/general/tagging-instructions.html#tagging-guidance"
 			target="_blank"
 			rel="noreferrer"
 			class="text-link transition-colors hover:text-hover">here</a

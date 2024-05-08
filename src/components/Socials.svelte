@@ -33,7 +33,7 @@
 	{/if}
 	{#if email}
 		<a href="mailto:{email}" target="_blank" rel="noreferrer" class="m-1">
-			<span class="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#53C5D5]">
+			<span class="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#000000]">
 				<i class="fa-solid fa-envelope h-7 w-7 text-white" />
 			</span>
 		</a>

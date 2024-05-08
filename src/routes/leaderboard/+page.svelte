@@ -183,9 +183,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Leaderboard</title>
+	<title>BTC Map - Leaderboard</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/leader.png" />
-	<meta property="twitter:title" content="W3B Map - Leaderboard" />
+	<meta property="twitter:title" content="BTC Map - Leaderboard" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/leader.png" />
 </svelte:head>
 
@@ -195,7 +195,7 @@
 	<main class="mt-10">
 		<div class="mb-10 flex justify-center">
 			<div id="hero" class="flex h-[324px] w-full items-end justify-center">
-				<img src="/images/supertagger-king.svg" alt="ultimate supertagger" />
+				<img src="/images/supertagger-king.png" alt="ultimate supertagger" />
 			</div>
 		</div>
 
@@ -206,7 +206,7 @@
 						? 'text-white'
 						: 'gradient'} text-center text-4xl font-semibold !leading-tight md:text-5xl"
 				>
-					Top Supertaggers
+					NFTprenuers
 				</h1>
 			{:else}
 				<HeaderPlaceholder />
@@ -234,7 +234,7 @@
 			<PrimaryButton
 				text="Smash these numbers"
 				style="w-[207px] mx-auto py-3 rounded-xl"
-				link="https://wiki.btcmap.org/general/tagging-instructions.html#shadowy-supertaggers-"
+				link="https://wiki.btcmap.luvnft.com/general/tagging-instructions.html#shadowy-supertaggers-"
 				external
 			/>
 
@@ -245,7 +245,7 @@
 							{heading}
 							{#if heading === 'Tip'}
 								<a
-									href="https://wiki.btcmap.org/general/lightning-tips.html"
+									href="https://wiki.btcmap.luvnft.com/general/lightning-tips.html"
 									target="_blank"
 									rel="noreferrer"><i class="fa-solid fa-circle-info text-sm" /></a
 								>

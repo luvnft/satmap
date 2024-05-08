@@ -28,7 +28,7 @@
 			})
 			.catch(function (error) {
 				// handle error
-				errToast('Could not fetch captcha, please try again or contact W3B Map.');
+				errToast('Could not fetch captcha, please try again or contact BTC Map.');
 				console.log(error);
 			});
 	};
@@ -73,7 +73,7 @@
 			})
 			.catch(function (error) {
 				// handle error
-				errToast('Could not search for locations, please try again or contact W3B Map.');
+				errToast('Could not search for locations, please try again or contact BTC Map.');
 				searchLoading = false;
 				console.log(error);
 			});
@@ -113,7 +113,7 @@
 					if (error.response.data.message.includes('Captcha')) {
 						errToast(error.response.data.message);
 					} else {
-						errToast('Form submission failed, please try again or contact W3B Map.');
+						errToast('Form submission failed, please try again or contact BTC Map.');
 					}
 
 					console.log(error);
@@ -131,9 +131,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Add Community</title>
+	<title>BTC Map - Add Community</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/add-community.png" />
-	<meta property="twitter:title" content="W3B Map - Add Community" />
+	<meta property="twitter:title" content="BTC Map - Add Community" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/add-community.png" />
 </svelte:head>
 
@@ -162,7 +162,7 @@
 					Please fill out this form to submit a community application. This is a great way to grow
 					bitcoin adoption in your area, have some fun, and maybe even make some friends along the
 					way. <InfoTooltip
-						tooltip="NOTE: W3B Map is a free and open source project run by volunteers. Each community application is manually reviewed to ensure quality. It may take a few weeks to have your community added."
+						tooltip="NOTE: BTC Map is a free and open source project run by volunteers. Each community application is manually reviewed to ensure quality. It may take a few weeks to have your community added."
 					/>
 				</p>
 
@@ -265,7 +265,7 @@
 							disabled={!captchaSecret}
 							type="url"
 							name="icon"
-							placeholder="https://static.btcmap.org/images/communities/iom.svg"
+							placeholder="https://static.btcmap.luvnft.com/images/communities/iom.svg"
 							class="w-full rounded-2xl border-2 border-input p-3 transition-all focus:outline-link dark:bg-white/[0.15]"
 							bind:value={icon}
 						/>

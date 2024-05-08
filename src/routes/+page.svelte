@@ -5,9 +5,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map</title>
+	<title>BTC Map</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="W3B Map" />
+	<meta property="twitter:title" content="BTC Map" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
@@ -27,7 +27,7 @@
 							? 'text-white'
 							: 'gradient'} text-center text-4xl font-semibold !leading-tight md:text-5xl xl:text-left"
 					>
-						The Google Maps of Bitcoin Sats that you own as a LUV NFT, locate businesses that accept Love Money ($LUV L$VE $RNT LUV NFT) worldwide
+						Explore the BTC Map to buy/sell 10m x 10m Bitcoin NFT land and discover nearby businesses accepting Bitcoin Sats.
 					</h1>
 				{:else}
 					<HeaderPlaceholder />
@@ -63,15 +63,16 @@
 					{/each}
 				</div>
 				<h2 class="text-center text-xl font-semibold text-primary dark:text-white xl:text-left">
-					$RNT for rent. $W3ST for What3Words locations. $L$VE for everything else.
+					BTC Map uses a global LNE (LUV NFT ESTATE) addressing system that assigns every 3m x 3m square on Earth a unique three-word address.
 					<br /><br />
-					Shill your Sats in the
+					Subscribe to
 					<a
-						href="https://twitter.com/i/communities/1766259879365243221"
+						href="https://nftv.luvnft.com"
 						target="_blank"
 						rel="noreferrer"
-						class="text-link transition-colors hover:text-hover">X BTCSATS</a
-					> community or in the LUV NFT Discord link below.
+						class="text-link transition-colors hover:text-hover">NFTV Discord</a
+					> as a Biz tier to add your business to the map or a LNElord to add properties that accept
+					Bitcoin $RNT.
 				</h2>
 			</div>
 			{#if typeof window !== 'undefined'}

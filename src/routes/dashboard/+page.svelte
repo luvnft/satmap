@@ -612,9 +612,9 @@
 </script>
 
 <svelte:head>
-	<title>W3B Map - Dashboard</title>
+	<title>BTC Map - Dashboard</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/dash.png" />
-	<meta property="twitter:title" content="W3B Map - Dashboard" />
+	<meta property="twitter:title" content="BTC Map - Dashboard" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/dash.png" />
 </svelte:head>
 
@@ -792,7 +792,7 @@
 
 			<p class="text-center text-sm text-body dark:text-white md:text-left">
 				*More information on bitcoin mapping tags can be found <a
-					href="https://wiki.btcmap.org/general/tagging-instructions.html#tagging-guidance"
+					href="https://wiki.btcmap.luvnft.com/general/tagging-instructions.html#tagging-guidance"
 					target="_blank"
 					rel="noreferrer"
 					class="text-link transition-colors hover:text-hover">here</a
