@@ -6,11 +6,6 @@
 		{ title: 'Contribute', url: '', icon: 'contribute' },
 		{ title: 'Stats', url: '', icon: 'stats' },
 		{ title: 'Areas', url: '', icon: 'areas' },
-		{
-			title: 'CRE CLUB',
-			url: '',
-			icon: 'wiki'
-		},
 		{ title: 'Support Us', url: '/support-us', icon: 'support' }
 	];
 
