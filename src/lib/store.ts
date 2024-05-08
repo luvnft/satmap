@@ -12,33 +12,27 @@ export const socials = readable({
 export const apps = readable([
 	{
 		link: '/map',
-		type: 'LUV NFT',
+		type: 'MAP',
 		icon: 'web',
-		desc: 'Progressive Web App'
+		desc: 'BTC Map'
 	},
 	{
-		link: 'https://f-droid.org/en/packages/org.btcmap/',
-		type: 'F-Droid',
-		icon: 'f-droid',
-		desc: 'FOSS App Store'
+		link: 'https://nftv.luvnft.com',
+		type: 'NFTV DISCORD',
+		icon: 'discord',
+		desc: 'NFTV Discord'
 	},
 	{
-		link: 'https://github.com/teambtcmap/btcmap-android/releases/latest',
-		type: 'APK',
-		icon: 'android',
-		desc: 'Direct Download'
+		link: 'https://tiktok.com/@what3bars',
+		type: '@WHAT3BARS',
+		icon: 'tiktok',
+		desc: 'What 3 Bars Tiktok'
 	},
 	{
-		link: 'https://play.google.com/store/apps/details?id=org.btcmap.app',
-		type: 'Play',
-		icon: 'play',
-		desc: 'Surveillance Option'
-	},
-	{
-		link: 'https://apps.apple.com/app/btc-world-map/id6443604345',
-		type: 'iOS',
-		icon: 'ios',
-		desc: 'Walled Garden Option'
+		link: 'https://tiktok.com/@luvnft',
+		type: '@LUVNFT',
+		icon: 'tiktok',
+		desc: 'LUV NFT Tiktok'
 	}
 ]);
 
