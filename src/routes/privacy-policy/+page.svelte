@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Privacy Policy</title>
+	<title>W3B Map - Privacy Policy</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="BTC Map - Privacy Policy" />
+	<meta property="twitter:title" content="W3B Map - Privacy Policy" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
@@ -44,10 +44,10 @@
 						If the submission is valid, it is added to <a
 							href="https://www.openstreetmap.org"
 							class="text-link transition-colors hover:text-hover">OpenStreetMap</a
-						> by a BTC Map contributor and will appear in our apps.
+						> by a W3B Map contributor and will appear in our apps.
 					</li>
 					<li>
-						Some information including communities is not stored on OpenStreetMap but in the BTC Map
+						Some information including communities is not stored on OpenStreetMap but in the W3B Map
 						database instead.
 					</li>
 				</ol>
@@ -94,7 +94,7 @@
 					We use privacy respecting analytics provided by <a
 						href="https://www.netlify.com/"
 						class="text-link transition-colors hover:text-hover">Netlify</a
-					> in order to see activity on BTC Map. For example, how many users are visiting the website
+					> in order to see activity on W3B Map. For example, how many users are visiting the website
 					and the performance.
 				</p>
 				<p>

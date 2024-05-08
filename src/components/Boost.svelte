@@ -75,13 +75,13 @@
 							console.log(response);
 						})
 						.catch(function (error) {
-							warningToast('Could not finalize boost, please contact BTC Map.');
+							warningToast('Could not finalize boost, please contact W3B Map.');
 							console.log(error);
 						});
 				}
 			})
 			.catch(function (error) {
-				errToast('Could not check invoice status, please try again or contact BTC Map.');
+				errToast('Could not check invoice status, please try again or contact W3B Map.');
 				console.log(error);
 			});
 	};
@@ -109,7 +109,7 @@
 					{ width: window.innerWidth > 768 ? 275 : 200 },
 					function (error: any) {
 						if (error) {
-							errToast('Could not generate QR, please try again or contact BTC Map.');
+							errToast('Could not generate QR, please try again or contact W3B Map.');
 							console.error(error);
 						}
 					}
@@ -120,7 +120,7 @@
 				loading = false;
 			})
 			.catch(function (error) {
-				errToast('Could not generate invoice, please try again or contact BTC Map.');
+				errToast('Could not generate invoice, please try again or contact W3B Map.');
 				console.log(error);
 				loading = false;
 			});
@@ -208,7 +208,7 @@
 					</div>
 
 					<p class="text-xs text-body dark:text-white">
-						The fee is used to support the BTC Map open source project and continue it's
+						The fee is used to support the W3B Map open source project and continue it's
 						development.
 					</p>
 
@@ -286,7 +286,7 @@
 							? 'break-all'
 							: ''}"
 					>
-						Thank you for supporting {$boost.name ? $boost.name : 'this location'} & BTC Map!
+						Thank you for supporting {$boost.name ? $boost.name : 'this location'} & W3B Map!
 					</p>
 
 					<p class="text-body dark:text-white">

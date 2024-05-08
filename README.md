@@ -1,4 +1,4 @@
-# BTC Map website
+# W3B Map website
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8a9b0504-641c-4975-9e2b-daefe43f93e8/deploy-status)](https://app.netlify.com/sites/btcmap/deploys)
 
@@ -31,7 +31,7 @@
 2. run `yarn` to install the packages
 3. `yarn dev` will open the app on `localhost:5173`
 
-_NOTE:_ BTC Map uses the latest LTS version of [node](https://nodejs.org/). If you have [NVM](https://github.com/nvm-sh/nvm), you can simply run `nvm use` in the root directory of the repo to switch to the supported node version.
+_NOTE:_ W3B Map uses the latest LTS version of [node](https://nodejs.org/). If you have [NVM](https://github.com/nvm-sh/nvm), you can simply run `nvm use` in the root directory of the repo to switch to the supported node version.
 
 ## PWA
 
@@ -39,7 +39,7 @@ This website is a progressive web app, meaning you can install it on your mobile
 
 ## Embedding
 
-For information on how to embed the BTC Map web map onto your own website or application please reference our [Wiki](https://www.wiki.btcmap.org/general/embedding.html).
+For information on how to embed the W3B Map web map onto your own website or application please reference our [Wiki](https://www.wiki.btcmap.org/general/embedding.html).
 
 ---
 

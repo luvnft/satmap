@@ -37,7 +37,7 @@ export const eventsSync = async () => {
 						eventsData = eventsUpdated;
 						response.data.forEach((data) => eventsData.push(data));
 					} catch (error) {
-						eventError.set('Could not load events from API, please try again or contact BTC Map.');
+						eventError.set('Could not load events from API, please try again or contact W3B Map.');
 						console.log(error);
 						break;
 					}
@@ -57,7 +57,7 @@ export const eventsSync = async () => {
 						.catch(function (err) {
 							events.set(eventsFiltered);
 							eventError.set(
-								'Could not store events locally, please try again or contact BTC Map.'
+								'Could not store events locally, please try again or contact W3B Map.'
 							);
 							console.log(err);
 						});
@@ -114,7 +114,7 @@ export const eventsSync = async () => {
 						useCachedData = true;
 
 						eventError.set(
-							'Could not update events from API, please try again or contact BTC Map.'
+							'Could not update events from API, please try again or contact W3B Map.'
 						);
 						console.error(error);
 						break;
@@ -134,7 +134,7 @@ export const eventsSync = async () => {
 							events.set(eventsData);
 
 							eventError.set(
-								'Could not update events locally, please try again or contact BTC Map.'
+								'Could not update events locally, please try again or contact W3B Map.'
 							);
 							console.log(err);
 						});
@@ -143,7 +143,7 @@ export const eventsSync = async () => {
 		})
 
 		.catch(async function (err) {
-			eventError.set('Could not load events locally, please try again or contact BTC Map.');
+			eventError.set('Could not load events locally, please try again or contact W3B Map.');
 			console.log(err);
 
 			let updatedSince = '2022-01-01T00:00:00.000Z';
@@ -164,7 +164,7 @@ export const eventsSync = async () => {
 					eventsData = eventsUpdated;
 					response.data.forEach((data) => eventsData.push(data));
 				} catch (error) {
-					eventError.set('Could not load events from API, please try again or contact BTC Map.');
+					eventError.set('Could not load events from API, please try again or contact W3B Map.');
 					console.log(error);
 					break;
 				}

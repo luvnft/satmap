@@ -17,9 +17,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Tagging Issues</title>
+	<title>W3B Map - Tagging Issues</title>
 	<meta property="og:image" content="https://btcmap.org/images/og/home.png" />
-	<meta property="twitter:title" content="BTC Map - Tagging Issues" />
+	<meta property="twitter:title" content="W3B Map - Tagging Issues" />
 	<meta property="twitter:image" content="https://btcmap.org/images/og/home.png" />
 </svelte:head>
 

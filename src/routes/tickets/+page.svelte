@@ -48,7 +48,7 @@
 			})
 			.catch(function (error) {
 				// handle error
-				errToast('Could not load open tickets, please try again or contact BTC Map.');
+				errToast('Could not load open tickets, please try again or contact W3B Map.');
 				console.log(error);
 			});
 	};
@@ -64,9 +64,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Open Tickets</title>
+	<title>W3B Map - Open Tickets</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="BTC Map - Open Tickets" />
+	<meta property="twitter:title" content="W3B Map - Open Tickets" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 

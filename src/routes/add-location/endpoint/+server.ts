@@ -58,7 +58,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	secret += decrypt.final('utf8');
 
 	if (captchaTest !== secret) {
-		error(400, 'Captcha test failed, please try again or contact BTC Map.');
+		error(400, 'Captcha test failed, please try again or contact W3B Map.');
 	}
 
 	if (used.includes(captchaSecret)) {

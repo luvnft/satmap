@@ -37,7 +37,7 @@ export const usersSync = async () => {
 						usersData = usersUpdated;
 						response.data.forEach((data) => usersData.push(data));
 					} catch (error) {
-						userError.set('Could not load users from API, please try again or contact BTC Map.');
+						userError.set('Could not load users from API, please try again or contact W3B Map.');
 						console.log(error);
 						break;
 					}
@@ -56,7 +56,7 @@ export const usersSync = async () => {
 						})
 						.catch(function (err) {
 							users.set(usersFiltered);
-							userError.set('Could not store users locally, please try again or contact BTC Map.');
+							userError.set('Could not store users locally, please try again or contact W3B Map.');
 							console.log(err);
 						});
 				}
@@ -111,7 +111,7 @@ export const usersSync = async () => {
 						users.set(value);
 						useCachedData = true;
 
-						userError.set('Could not update users from API, please try again or contact BTC Map.');
+						userError.set('Could not update users from API, please try again or contact W3B Map.');
 						console.error(error);
 						break;
 					}
@@ -129,7 +129,7 @@ export const usersSync = async () => {
 							// set updated users to store
 							users.set(usersData);
 
-							userError.set('Could not update users locally, please try again or contact BTC Map.');
+							userError.set('Could not update users locally, please try again or contact W3B Map.');
 							console.log(err);
 						});
 				}
@@ -137,7 +137,7 @@ export const usersSync = async () => {
 		})
 
 		.catch(async function (err) {
-			userError.set('Could not load users locally, please try again or contact BTC Map.');
+			userError.set('Could not load users locally, please try again or contact W3B Map.');
 			console.log(err);
 
 			let updatedSince = '2022-01-01T00:00:00.000Z';
@@ -158,7 +158,7 @@ export const usersSync = async () => {
 					usersData = usersUpdated;
 					response.data.forEach((data) => usersData.push(data));
 				} catch (error) {
-					userError.set('Could not load users from API, please try again or contact BTC Map.');
+					userError.set('Could not load users from API, please try again or contact W3B Map.');
 					console.log(error);
 					break;
 				}

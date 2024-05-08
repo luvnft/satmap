@@ -68,7 +68,7 @@
 
 		const userFound = $users.find((user) => user.id == data.user);
 		if (!userFound) {
-			console.log('Could not find user, please try again or contact BTC Map.');
+			console.log('Could not find user, please try again or contact W3B Map.');
 			goto('/404');
 			return;
 		}
@@ -524,9 +524,9 @@
 </script>
 
 <svelte:head>
-	<title>{username ? username + ' - ' : ''}BTC Map Supertagger</title>
+	<title>{username ? username + ' - ' : ''}W3B Map Supertagger</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/supertagger.png" />
-	<meta property="twitter:title" content="{username ? username + ' - ' : ''}BTC Map Supertagger" />
+	<meta property="twitter:title" content="{username ? username + ' - ' : ''}W3B Map Supertagger" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/supertagger.png" />
 
 	{#if lightning}
@@ -539,7 +539,7 @@
 			content="lnurlp:lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp"
 		/>
 		<meta property="alby:image" content="/images/logo.svg" />
-		<meta property="alby:name" content="BTC Map" />
+		<meta property="alby:name" content="W3B Map" />
 	{/if}
 </svelte:head>
 
@@ -563,7 +563,7 @@
 
 				<div class="space-y-1">
 					<h1 class="text-4xl font-semibold !leading-tight text-primary dark:text-white">
-						{username || 'BTC Map Supertagger'}
+						{username || 'W3B Map Supertagger'}
 					</h1>
 					<p
 						class="flex items-center justify-center space-x-1 text-sm text-primary dark:text-white"
@@ -681,7 +681,7 @@
 					<h3
 						class="border-b border-statBorder p-5 text-center text-lg font-semibold text-primary dark:text-white md:text-left"
 					>
-						{username || 'BTC Map Supertagger'}'s Activity
+						{username || 'W3B Map Supertagger'}'s Activity
 					</h3>
 
 					<div
@@ -740,7 +740,7 @@
 				<h3
 					class="rounded-t-3xl border border-b-0 border-statBorder p-5 text-center text-lg font-semibold text-primary dark:bg-white/10 dark:text-white md:text-left"
 				>
-					{username || 'BTC Map Supertagger'}'s Map
+					{username || 'W3B Map Supertagger'}'s Map
 				</h3>
 
 				<div class="relative">

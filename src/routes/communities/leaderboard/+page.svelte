@@ -5,9 +5,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Communities Leaderboard</title>
+	<title>W3B Map - Communities Leaderboard</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/top-communities.png" />
-	<meta property="twitter:title" content="BTC Map - Communities Leaderboard" />
+	<meta property="twitter:title" content="W3B Map - Communities Leaderboard" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/top-communities.png" />
 </svelte:head>
 

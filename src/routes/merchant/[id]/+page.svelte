@@ -92,7 +92,7 @@
 		merchant = $elements.find((element) => element.id == data.id);
 
 		if (!merchant) {
-			console.log('Could not find merchant, please try again or contact BTC Map.');
+			console.log('Could not find merchant, please try again or contact W3B Map.');
 			goto('/404');
 			return;
 		}
@@ -129,8 +129,7 @@
 			merchant.osm_json.tags &&
 			(merchant.osm_json.tags['payment:onchain'] ||
 				merchant.osm_json.tags['payment:lightning'] ||
-				merchant.osm_json.tags['payment:lightning_contactless'] ||
-				thirdParty);
+				merchant.osm_json.tags['payment:lightning_contactless']);
 
 		lat = latCalc(merchant['osm_json']);
 		long = longCalc(merchant['osm_json']);
@@ -245,6 +244,7 @@
 	let lnTooltip: HTMLImageElement;
 	let nfcTooltip: HTMLImageElement;
 	let verifiedTooltip: HTMLSpanElement;
+	let outdatedTooltip: HTMLSpanElement;
 
 	$: thirdPartyTooltip &&
 		merchant &&
@@ -290,6 +290,11 @@
 			content: 'Verified within the last year'
 		});
 
+	$: outdatedTooltip &&
+		tippy([outdatedTooltip], {
+			content: 'Outdated please re-verify'
+		});
+
 	let lat: number | undefined;
 	let long: number | undefined;
 
@@ -316,7 +321,7 @@
 				$exchangeRate = response.data['USD']['15m'];
 			})
 			.catch(function (error) {
-				errToast('Could not fetch bitcoin exchange rate, please try again or contact BTC Map.');
+				errToast('Could not fetch bitcoin exchange rate, please try again or contact W3B Map.');
 				console.log(error);
 				resetBoostLoading();
 			});
@@ -387,22 +392,22 @@
 </script>
 
 <svelte:head>
-	<title>{name ? name + ' - ' : ''}BTC Map Merchant</title>
+	<title>{name ? name + ' - ' : ''}W3B Map Merchant</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/merchant.png" />
-	<meta property="twitter:title" content="{name ? name + ' - ' : ''}BTC Map Merchant" />
+	<meta property="twitter:title" content="{name ? name + ' - ' : ''}W3B Map Merchant" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/merchant.png" />
 
 	{#if payment && payment.type === 'uri' && payment.url?.startsWith('lightning:')}
 		<meta name="lightning" content="lnurlp:{payment.url.slice(10, payment.url.length)}" />
 		<meta property="alby:image" content="/images/logo.svg" />
-		<meta property="alby:name" content={name || 'BTC Map Merchant'} />
+		<meta property="alby:name" content={name || 'W3B Map Merchant'} />
 	{:else}
 		<meta
 			name="lightning"
 			content="lnurlp:lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp"
 		/>
 		<meta property="alby:image" content="/images/logo.svg" />
-		<meta property="alby:name" content="BTC Map" />
+		<meta property="alby:name" content="W3B Map" />
 	{/if}
 </svelte:head>
 
@@ -431,7 +436,7 @@
 					{/if}
 
 					<h1 class="text-4xl font-semibold !leading-tight text-primary dark:text-white">
-						{name || 'BTC Map Merchant'}
+						{name || 'W3B Map Merchant'}
 					</h1>
 
 					{#if address}
@@ -570,11 +575,11 @@
 					{/if}
 				</div>
 
-				{#if paymentMethod && merchant}
+				{#if (paymentMethod || thirdParty) && merchant}
 					<div>
 						<h4 class="uppercase text-primary dark:text-white">Accepted Payments</h4>
 						<div class="mt-1 flex items-center justify-center space-x-2">
-							{#if thirdParty}
+							{#if !paymentMethod}
 								<a
 									bind:this={thirdPartyTooltip}
 									href={merchant.osm_json.tags?.['payment:lightning:companion_app_url']}
@@ -698,6 +703,16 @@
 												h="30"
 												style="text-primary dark:text-white mr-2"
 												icon="verified"
+												type="popup"
+											/>
+										</span>
+									{:else}
+										<span bind:this={outdatedTooltip}>
+											<Icon
+												w="30"
+												h="30"
+												style="text-primary dark:text-white mr-2"
+												icon="outdated"
 												type="popup"
 											/>
 										</span>

@@ -66,6 +66,9 @@
 	$: bitcoinBulgaria =
 		communities &&
 		communities.filter((community) => community.tags.organization === 'bitcoin-bulgaria');
+	$: bitcoinIndonesia =
+		communities &&
+		communities.filter((community) => community.tags.organization === 'bitcoin-indonesia');
 	$: bitcoinJamii =
 		communities &&
 		communities.filter((community) => community.tags.organization === 'bitcoin-jamii');
@@ -83,6 +86,9 @@
 	$: dwadziesciaJeden =
 		communities &&
 		communities.filter((community) => community.tags.organization === 'dwadziescia-jeden');
+	$: eenentwintig =
+		communities &&
+		communities.filter((community) => community.tags.organization === 'eenentwintig');
 	$: einundzwanzig =
 		communities &&
 		communities.filter((community) => community.tags.organization === 'einundzwanzig');
@@ -204,12 +210,14 @@
 		'Bitcoin4India',
 		'Bitcoin 4 Iranians',
 		'Bitcoin Bulgaria',
+		'Bitcoin Indonesia',
 		'Bitcoin Jamii',
 		'BitDevs',
 		'Breizh Bitcoin',
 		'Découvre Bitcoin',
 		'Dvadsatjeden',
 		'Dwadzieścia Jeden',
+		'Eenentwintig',
 		'Einundzwanzig',
 		'Enogtyve',
 		'Jednadvacet',
@@ -245,12 +253,14 @@
 		{ section: 'Bitcoin4India', communities: bitcoin4India },
 		{ section: 'Bitcoin 4 Iranians', communities: bitcoin4Iranians },
 		{ section: 'Bitcoin Bulgaria', communities: bitcoinBulgaria },
+		{ section: 'Bitcoin Indonesia', communities: bitcoinIndonesia },
 		{ section: 'Bitcoin Jamii', communities: bitcoinJamii },
 		{ section: 'BitDevs', communities: bitDevs },
 		{ section: 'Breizh Bitcoin', communities: breizhBitcoin },
 		{ section: 'Découvre Bitcoin', communities: decouvreBitcoin },
 		{ section: 'Dvadsatjeden', communities: dvadsatjeden },
 		{ section: 'Dwadzieścia Jeden', communities: dwadziesciaJeden },
+		{ section: 'Eenentwintig', communities: eenentwintig },
 		{ section: 'Einundzwanzig', communities: einundzwanzig },
 		{ section: 'Enogtyve', communities: enogtyve },
 		{ section: 'Jednadvacet', communities: jednadvacet },
@@ -274,9 +284,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Communities</title>
+	<title>W3B Map - Communities</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
-	<meta property="twitter:title" content="BTC Map - Communities" />
+	<meta property="twitter:title" content="W3B Map - Communities" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
 </svelte:head>
 

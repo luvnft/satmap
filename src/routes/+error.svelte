@@ -12,9 +12,9 @@
   </script>
   
   <svelte:head>
-	<title>BTC Map - Error</title>
+	<title>W3B Map - Error</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="BTC Map" />
+	<meta property="twitter:title" content="W3B Map" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 	{#if $page.url.pathname.startsWith('/tagger') || $page.url.pathname.startsWith('/community') || $page.url.pathname.startsWith('/merchant')}
 	  <meta
@@ -22,7 +22,7 @@
 		content="lnurlp:lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp"
 	  />
 	  <meta property="alby:image" content="/images/logo.svg" />
-	  <meta property="alby:name" content="BTC Map" />
+	  <meta property="alby:name" content="W3B Map" />
 	{/if}
   </svelte:head>
   
@@ -40,7 +40,7 @@
 		>
 		<h1 class="text-4xl dark:text-white md:text-5xl">{$page.status}: {$page.error?.message}</h1>
 		<h2 class="text-xl font-semibold text-primary dark:text-white">
-		  Please try again or contact BTC Map.
+		  Please try again or contact W3B Map.
 		</h2>
 	  </div>
   

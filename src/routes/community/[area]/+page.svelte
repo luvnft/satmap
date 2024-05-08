@@ -8,9 +8,9 @@
 </script>
 
 <svelte:head>
-	<title>{name ? name + ' - ' : ''}BTC Map Community</title>
+	<title>{name ? name + ' - ' : ''}W3B Map Community</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
-	<meta property="twitter:title" content="{name ? name + ' - ' : ''}BTC Map Community" />
+	<meta property="twitter:title" content="{name ? name + ' - ' : ''}W3B Map Community" />
 	<meta property="twitter:image" content="https://btcmap.org/images/og/communities.png" />
 </svelte:head>
 

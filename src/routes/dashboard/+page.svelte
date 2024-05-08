@@ -612,9 +612,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Dashboard</title>
+	<title>W3B Map - Dashboard</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/dash.png" />
-	<meta property="twitter:title" content="BTC Map - Dashboard" />
+	<meta property="twitter:title" content="W3B Map - Dashboard" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/dash.png" />
 </svelte:head>
 

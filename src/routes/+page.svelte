@@ -5,9 +5,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map</title>
+	<title>W3B Map</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="BTC Map" />
+	<meta property="twitter:title" content="W3B Map" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 

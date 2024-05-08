@@ -183,9 +183,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Leaderboard</title>
+	<title>W3B Map - Leaderboard</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/leader.png" />
-	<meta property="twitter:title" content="BTC Map - Leaderboard" />
+	<meta property="twitter:title" content="W3B Map - Leaderboard" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/leader.png" />
 </svelte:head>
 

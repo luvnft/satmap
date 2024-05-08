@@ -287,7 +287,7 @@ export const support = () => {
 	supportAttribution.style.borderRadius = '8px 0 0 0';
 	supportAttribution.style.filter = 'drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.3))';
 	supportAttribution.innerHTML =
-		'<a href="/support-us" class="!text-link hover:!text-hover !no-underline transition-colors" title="Support with sats">Support</a> BTC Map';
+		'<a href="/support-us" class="!text-link hover:!text-hover !no-underline transition-colors" title="Support with sats">Support</a> W3B Map';
 	supportAttribution.classList.add(
 		'dark:!bg-dark',
 		'dark:!text-white',
@@ -737,8 +737,7 @@ export const generateMarker = (
 			element.tags &&
 			(element.tags['payment:onchain'] ||
 				element.tags['payment:lightning'] ||
-				element.tags['payment:lightning_contactless'] ||
-				thirdParty);
+				element.tags['payment:lightning_contactless']);
 
 		const popupContainer = L.DomUtil.create('div');
 
@@ -948,13 +947,13 @@ export const generateMarker = (
 
 			<div class='flex space-x-4'>
 ${
-	paymentMethod
+	paymentMethod || thirdParty
 		? `<div>
 					<span class='block text-mapLabel text-xs'>Payment Methods</span>
 
 					<div class='w-full flex space-x-2 mt-0.5'>
 					${
-						thirdParty
+						!paymentMethod
 							? `<a href=${element.tags?.['payment:lightning:companion_app_url']} target="_blank" rel="noreferrer">
 								<i class="fa-solid fa-mobile-screen-button w-6 h-6 !text-primary dark:!text-white hover:!text-link dark:hover:!text-link transition-colors" title="Third party app required"></i>
 							   </a>`
@@ -1025,7 +1024,7 @@ ${
 }
 
 				<div>
-					<span class='block text-mapLabel text-xs' title="Completed by BTC Map community members">Last Surveyed</span>
+					<span class='block text-mapLabel text-xs' title="Completed by W3B Map community members">Last Surveyed</span>
 					<span class='block text-body dark:text-white'>
 					${
 						verified.length
@@ -1034,7 +1033,9 @@ ${
 										? `<span title="Verified within the last year"><svg width='16px' height='16px' class='inline text-primary dark:text-white'>
 												<use width='16px' height='16px' href="/icons/popup/spritesheet.svg#verified"></use>
 											</svg></span>`
-										: ''
+										: `<span title="Outdated please re-verify"><svg width='16px' height='16px' class='inline text-primary dark:text-white'>
+												<use width='16px' height='16px' href="/icons/popup/spritesheet.svg#outdated"></use>
+											</svg></span>`
 								}`
 							: '<span title="Not verified">---</span>'
 					}
@@ -1179,7 +1180,7 @@ ${
 							})
 							.catch(function (error) {
 								errToast(
-									'Could not fetch bitcoin exchange rate, please try again or contact BTC Map.'
+									'Could not fetch bitcoin exchange rate, please try again or contact W3B Map.'
 								);
 								console.log(error);
 								resetButton();

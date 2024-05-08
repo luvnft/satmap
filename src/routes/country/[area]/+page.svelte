@@ -8,9 +8,9 @@
 </script>
 
 <svelte:head>
-	<title>{name ? name + ' - ' : ''}BTC Map Country</title>
+	<title>{name ? name + ' - ' : ''}W3B Map Country</title>
 	<meta property="og:image" content="https://btcmap.org/images/og/countries.png" />
-	<meta property="twitter:title" content="{name ? name + ' - ' : ''}BTC Map Country" />
+	<meta property="twitter:title" content="{name ? name + ' - ' : ''}W3B Map Country" />
 	<meta property="twitter:image" content="https://btcmap.org/images/og/countries.png" />
 </svelte:head>
 

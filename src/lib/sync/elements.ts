@@ -43,7 +43,7 @@ export const elementsSync = async () => {
 						response.data.forEach((data) => elementsData.push(data));
 					} catch (error) {
 						elementError.set(
-							'Could not load elements from API, please try again or contact BTC Map.'
+							'Could not load elements from API, please try again or contact W3B Map.'
 						);
 						console.log(error);
 						break;
@@ -64,7 +64,7 @@ export const elementsSync = async () => {
 						.catch(function (err) {
 							elements.set(elementsFiltered);
 							elementError.set(
-								'Could not store elements locally, please try again or contact BTC Map.'
+								'Could not store elements locally, please try again or contact W3B Map.'
 							);
 							console.log(err);
 						});
@@ -125,7 +125,7 @@ export const elementsSync = async () => {
 						useCachedData = true;
 
 						elementError.set(
-							'Could not update elements from API, please try again or contact BTC Map.'
+							'Could not update elements from API, please try again or contact W3B Map.'
 						);
 						console.error(error);
 						break;
@@ -151,7 +151,7 @@ export const elementsSync = async () => {
 							mapUpdates.set(true);
 
 							elementError.set(
-								'Could not update elements locally, please try again or contact BTC Map.'
+								'Could not update elements locally, please try again or contact W3B Map.'
 							);
 							console.log(err);
 						});
@@ -160,7 +160,7 @@ export const elementsSync = async () => {
 		})
 
 		.catch(async function (err) {
-			elementError.set('Could not load elements locally, please try again or contact BTC Map.');
+			elementError.set('Could not load elements locally, please try again or contact W3B Map.');
 			console.log(err);
 
 			// add to sync count to only show data refresh after initial load
@@ -186,7 +186,7 @@ export const elementsSync = async () => {
 					response.data.forEach((data) => elementsData.push(data));
 				} catch (error) {
 					elementError.set(
-						'Could not load elements from API, please try again or contact BTC Map.'
+						'Could not load elements from API, please try again or contact W3B Map.'
 					);
 					console.log(error);
 					break;

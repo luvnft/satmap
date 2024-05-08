@@ -82,9 +82,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Activity</title>
+	<title>W3B Map - Activity</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/activity.png" />
-	<meta property="twitter:title" content="BTC Map - Activity" />
+	<meta property="twitter:title" content="W3B Map - Activity" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/activity.png" />
 </svelte:head>
 

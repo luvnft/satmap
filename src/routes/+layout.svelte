@@ -15,11 +15,18 @@
 	import localforage from 'localforage';
 	import { SvelteToast } from '@zerodevx/svelte-toast';
 	import 'tippy.js/dist/tippy.css';
+<<<<<<< HEAD
   
 	// Set default axios timeout
 	axios.defaults.timeout = 10000;
   
 	// Configuration for SvelteToast
+=======
+	import '../app.css';
+
+	axios.defaults.timeout = 600000;
+
+>>>>>>> 85f6a7d1754b9252f0485026d1c4e553cdd881c5
 	const options = {
 	  reversed: true,
 	  intro: { y: 192 },
@@ -32,7 +39,7 @@
 	onMount(async () => {
 	  // Configure localforage
 	  localforage.config({
-		name: 'BTC Map',
+		name: 'W3B Map',
 		description: 'The Times 03/Jan/2009 Chancellor on brink of second bailout for banks'
 	  });
   
@@ -71,7 +78,7 @@
 	{#if !$page.url.pathname.startsWith('/tagger') && !$page.url.pathname.startsWith('/community') && !$page.url.pathname.startsWith('/merchant')}
 	  <meta name="lightning" content="lnurlp:lnurl1dp68gurn8ghjlc565rhm3reqwfjkw6t0dcsxumm5ypeh2ursdae8getyyr3f4g80hz8j7tnhv4kxctttdehhwm30d3h82unvwqhscn5dpp" />
 	  <meta property="alby:image" content="/images/logo.svg" />
-	  <meta property="alby:name" content="BTC Map" />
+	  <meta property="alby:name" content="W3B Map" />
 	{/if}
   </svelte:head>
   

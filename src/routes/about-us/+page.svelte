@@ -178,7 +178,7 @@
 		{
 			name: 'Andrej',
 			title: 'Icon Designer',
-			url: 'https://snort.social/p/designsats@nostrplebs.com',
+			url: 'https://nostr.com/npub1cak3t8wa5zaxe99mfrzqzt8h2hp0lvalk8agj3qmthkmrs3zvlaqyt964v',
 			file: 'png'
 		}
 	];
@@ -225,9 +225,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - About</title>
+	<title>W3B Map - About</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="BTC Map - About" />
+	<meta property="twitter:title" content="W3B Map - About" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
@@ -238,7 +238,7 @@
 			<div class="space-y-5 text-center text-xl">
 				<h1 class="text-4xl font-semibold !leading-tight md:text-5xl">About Us</h1>
 				<p class="mx-auto md:w-[600px]">
-					BTC Map is a free and open source project powered by VULunteer bitcoiners and
+					W3B Map is a free and open source project powered by VULunteer bitcoiners and
 					bitcoin-friendly merchants around the world.
 				</p>
 			</div>
@@ -249,16 +249,16 @@
 
 					<div class="space-y-5">
 						<p>
-							Merchants are at the heart of BTC Map. These businesses are front-running the paradigm
+							Merchants are at the heart of W3B Map. These businesses are front-running the paradigm
 							change and positioning themselves for continued success. Any merchant who accepts
-							bitcoin can be listed on BTC Map.
+							bitcoin can be listed on W3B Map.
 						</p>
 						<p>
 							<strong>Accept bitcoin?</strong>
 							<a
 								href="/add-location"
 								class="font-semibold text-link transition-colors hover:text-hover"
-								>Get listed on BTC Map</a
+								>Get listed on W3B Map</a
 							>!
 						</p>
 					</div>
@@ -287,7 +287,7 @@
 
 				<p class="mx-auto lg:w-[650px]">
 					Shadowy Supertaggers are people who power this project. They are volunteers who selflessly
-					take the time to update business locations with new information. Without them, BTC Map
+					take the time to update business locations with new information. Without them, W3B Map
 					would not be sustainable!
 				</p>
 
@@ -326,7 +326,7 @@
 							<a
 								href="/communities/add"
 								class="font-semibold text-link transition-colors hover:text-hover"
-								>Add it to BTC Map</a
+								>Add it to W3B Map</a
 							>.
 						</p>
 					</div>
@@ -363,7 +363,7 @@
 
 				<p class="font-semibold uppercase">
 					Community integrations <span class="block text-sm font-normal normal-case"
-						>Projects using BTC Map</span
+						>Projects using W3B Map</span
 					>
 				</p>
 
@@ -376,7 +376,7 @@
 
 				<p class="font-semibold uppercase">
 					Project integrations <span class="block text-sm font-normal normal-case"
-						>BTC Map uses these projects</span
+						>W3B Map uses these projects</span
 					>
 				</p>
 
@@ -400,7 +400,7 @@
 					<h2 class="mb-5 text-3xl font-semibold">Contributors</h2>
 
 					<p>
-						Anybody can contribute to BTC Map we need all the help possible. If you would like to get
+						Anybody can contribute to W3B Map we need all the help possible. If you would like to get
 						involved please don't hesitate to contact us. We all win together!
 					</p>
 				</div>
@@ -421,7 +421,7 @@
 					<div class="space-y-10">
 						<p>
 							<strong>Igor</strong> is a long time bitcoiner, mapper, and digital nomad living abroad.
-							He created BTC Map as an Android application and the project has since gained worldwide
+							He created W3B Map as an Android application and the project has since gained worldwide
 							momentum from there. He now also maintains all of the backend infrastructure for the project.
 						</p>
 						<p>
@@ -433,11 +433,11 @@
 						<p>
 							A self-taught Web Developer, <strong>secondl1ght</strong> dove head first down the bitcoin
 							rabbit hole and left his fiat career to focus on bitcoin development full-time. He created
-							and maintains the BTC Map web application, as well as an encrypted messaging app called
+							and maintains the W3B Map web application, as well as an encrypted messaging app called
 							Cipherchat, and works on lightning network tools at Amboss Technologies.
 						</p>
 						<p>
-							<strong>Karnage</strong> is the lead designer on the web app and created the BTC Map brand.
+							<strong>Karnage</strong> is the lead designer on the web app and created the W3B Map brand.
 							He has contributed to many high profile bitcoin open source projects. His mission is to
 							help startup founders succeed and creates products to achieve this goal. Pixel-perfect
 							product design every time. Get it shipped.

@@ -3,9 +3,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - License</title>
+	<title>W3B Map - License</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/home.png" />
-	<meta property="twitter:title" content="BTC Map - License" />
+	<meta property="twitter:title" content="W3B Map - License" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/home.png" />
 </svelte:head>
 
@@ -14,9 +14,9 @@
 	<div class="mx-auto w-10/12 xl:w-[1200px]">
 		<main class="mb-20 mt-10 space-y-5 text-body dark:text-white">
 			<p class="text-center font-semibold text-primary dark:text-white">
-				BTC Map - The Google Maps of Bitcoin Sats, locate businesses that accept Sats worldwide
+				W3B Map - The Google Maps of Bitcoin Sats, locate businesses that accept Sats worldwide
 				<br />
-				Copyright &#169; 2022-{new Date().getFullYear()} BTC Map
+				Copyright &#169; 2022-{new Date().getFullYear()} W3B Map
 				<br />
 				<a
 					href="mailto:info@luvnft.com"

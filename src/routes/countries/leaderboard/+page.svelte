@@ -5,9 +5,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Countries Leaderboard</title>
+	<title>W3B Map - Countries Leaderboard</title>
 	<meta property="og:image" content="https://btcmap.org/images/og/top-countries.png" />
-	<meta property="twitter:title" content="BTC Map - Countries Leaderboard" />
+	<meta property="twitter:title" content="W3B Map - Countries Leaderboard" />
 	<meta property="twitter:image" content="https://btcmap.org/images/og/top-countries.png" />
 </svelte:head>
 

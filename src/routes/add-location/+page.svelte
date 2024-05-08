@@ -34,7 +34,7 @@
 			})
 			.catch(function (error) {
 				// handle error
-				errToast('Could not fetch captcha, please try again or contact BTC Map.');
+				errToast('Could not fetch captcha, please try again or contact W3B Map.');
 				console.log(error);
 			});
 	};
@@ -145,7 +145,7 @@
 					if (error.response.data.message.includes('Captcha')) {
 						errToast(error.response.data.message);
 					} else {
-						errToast('Form submission failed, please try again or contact BTC Map.');
+						errToast('Form submission failed, please try again or contact W3B Map.');
 					}
 					console.log(error);
 					submitting = false;
@@ -267,9 +267,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Add Location</title>
+	<title>W3B Map - Add Location</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/add.png" />
-	<meta property="twitter:title" content="BTC Map - Add Location" />
+	<meta property="twitter:title" content="W3B Map - Add Location" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/add.png" />
 </svelte:head>
 
@@ -289,13 +289,22 @@
 				<HeaderPlaceholder />
 			{/if}
 
+			<p class="mt-10 text-center text-lg font-semibold text-primary dark:text-white md:text-xl">
+				If you're a business owner, please read our <a
+					href="https://wiki.btcmap.org/general/merchant-best-practices"
+					target="_blank"
+					rel="noreferrer"
+					class="text-link transition-colors hover:text-hover">Merchant Best Practices</a
+				> guide.
+			</p>
+
 			<div class="mt-16 pb-20 md:pb-32">
 				<section id="supertagger" class="mx-auto w-full border-b border-input pb-14">
 					<div class="mx-auto max-w-xl text-primary dark:text-white">
 						<h2 class="mb-5 text-center text-3xl font-semibold md:text-left">Start Here</h2>
 						<p class="mb-10 w-full text-justify">
 							We use OpenStreetMap to tag locations. Follow the steps below to quickly add a
-							merchant to BTC Map.
+							merchant to W3B Map.
 						</p>
 
 						<div class="flex justify-center">

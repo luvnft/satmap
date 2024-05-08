@@ -34,7 +34,7 @@
 			{ width: window.innerWidth > 640 ? 256 : 200 },
 			function (error: any) {
 				if (error) {
-					warningToast('Could not generate QR, please try again or contact BTC Map.');
+					warningToast('Could not generate QR, please try again or contact W3B Map.');
 					console.error(error);
 				}
 			}
@@ -49,9 +49,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Support Us</title>
+	<title>W3B Map - Support Us</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/support.png" />
-	<meta property="twitter:title" content="BTC Map - Support Us" />
+	<meta property="twitter:title" content="W3B Map - Support Us" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/support.png" />
 </svelte:head>
 

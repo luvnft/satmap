@@ -38,7 +38,7 @@ export const reportsSync = async () => {
 						response.data.forEach((data) => reportsData.push(data));
 					} catch (error) {
 						reportError.set(
-							'Could not load reports from API, please try again or contact BTC Map.'
+							'Could not load reports from API, please try again or contact W3B Map.'
 						);
 						console.log(error);
 						break;
@@ -59,7 +59,7 @@ export const reportsSync = async () => {
 						.catch(function (err) {
 							reports.set(reportsFiltered);
 							reportError.set(
-								'Could not store reports locally, please try again or contact BTC Map.'
+								'Could not store reports locally, please try again or contact W3B Map.'
 							);
 							console.log(err);
 						});
@@ -116,7 +116,7 @@ export const reportsSync = async () => {
 						useCachedData = true;
 
 						reportError.set(
-							'Could not update reports from API, please try again or contact BTC Map.'
+							'Could not update reports from API, please try again or contact W3B Map.'
 						);
 						console.error(error);
 						break;
@@ -136,7 +136,7 @@ export const reportsSync = async () => {
 							reports.set(reportsData);
 
 							reportError.set(
-								'Could not update reports locally, please try again or contact BTC Map.'
+								'Could not update reports locally, please try again or contact W3B Map.'
 							);
 							console.log(err);
 						});
@@ -145,7 +145,7 @@ export const reportsSync = async () => {
 		})
 
 		.catch(async function (err) {
-			reportError.set('Could not load reports locally, please try again or contact BTC Map.');
+			reportError.set('Could not load reports locally, please try again or contact W3B Map.');
 			console.log(err);
 
 			let updatedSince = '2022-01-01T00:00:00.000Z';
@@ -166,7 +166,7 @@ export const reportsSync = async () => {
 					reportsData = reportsUpdated;
 					response.data.forEach((data) => reportsData.push(data));
 				} catch (error) {
-					reportError.set('Could not load reports from API, please try again or contact BTC Map.');
+					reportError.set('Could not load reports from API, please try again or contact W3B Map.');
 					console.log(error);
 					break;
 				}

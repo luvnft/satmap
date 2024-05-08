@@ -92,9 +92,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Countries</title>
+	<title>W3B Map - Countries</title>
 	<meta property="og:image" content="https://btcmap.org/images/og/countries.png" />
-	<meta property="twitter:title" content="BTC Map - Countries" />
+	<meta property="twitter:title" content="W3B Map - Countries" />
 	<meta property="twitter:image" content="https://btcmap.org/images/og/countries.png" />
 </svelte:head>
 

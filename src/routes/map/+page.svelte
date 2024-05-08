@@ -110,6 +110,9 @@
 	// allow to view map with only legacy nodes
 	const legacy = $page.url.searchParams.has('legacy');
 
+	// allow to view map with only outdated nodes
+	const outdated = $page.url.searchParams.has('outdated');
+
 	// allow to view map with only boosted locations
 	const boosts = $page.url.searchParams.has('boosts');
 
@@ -160,6 +163,9 @@
 
 			const elementOSM = element['osm_json'];
 
+			let verified = verifiedArr(elementOSM);
+			let upToDate = verified.length && Date.parse(verified[0]) > verifiedDate;
+
 			if (
 				(onchain ? elementOSM.tags && elementOSM.tags['payment:onchain'] === 'yes' : true) &&
 				(lightning ? elementOSM.tags && elementOSM.tags['payment:lightning'] === 'yes' : true) &&
@@ -167,6 +173,7 @@
 					? elementOSM.tags && elementOSM.tags['payment:lightning_contactless'] === 'yes'
 					: true) &&
 				(legacy ? elementOSM.tags && elementOSM.tags['payment:bitcoin'] === 'yes' : true) &&
+				(outdated ? !upToDate : true) &&
 				(boosts ? boosted : true)
 			) {
 				const lat = latCalc(elementOSM);
@@ -187,9 +194,7 @@
 					element.tags.issues
 				);
 
-				let verified = verifiedArr(elementOSM);
-
-				if (verified.length && Date.parse(verified[0]) > verifiedDate) {
+				if (upToDate) {
 					upToDateLayer.addLayer(marker);
 				} else {
 					outdatedLayer.addLayer(marker);
@@ -201,7 +206,13 @@
 
 				if (
 					elementOSM.tags &&
-					elementOSM.tags['payment:lightning:requires_companion_app'] === 'yes'
+					elementOSM.tags['payment:lightning:requires_companion_app'] === 'yes' &&
+					elementOSM.tags['payment:lightning:companion_app_url'] &&
+					!(
+						elementOSM.tags['payment:onchain'] ||
+						elementOSM.tags['payment:lightning'] ||
+						elementOSM.tags['payment:lightning_contactless']
+					)
 				) {
 					thirdPartyLayer.addLayer(marker);
 				}
@@ -225,24 +236,28 @@
 		map.addLayer(markers);
 
 		let overlayMaps: MapGroups = {
-			'Up-To-Date': upToDateLayer,
+			...(!outdated ? { 'Up-To-Date': upToDateLayer } : {}),
 			Outdated: outdatedLayer,
 			Legacy: legacyLayer,
 			'Third Party App': thirdPartyLayer
 		};
 
+		if (!outdated) {
+			map.addLayer(upToDateLayer);
+		}
+
+		map.addLayer(outdatedLayer);
+		map.addLayer(legacyLayer);
+		map.addLayer(thirdPartyLayer);
+
 		Object.keys(categories)
 			.sort()
-			.map((category) => {
+			.forEach((category) => {
 				overlayMaps[
 					category === 'atm'
 						? category.toUpperCase()
 						: category.charAt(0).toUpperCase() + category.slice(1)
 				] = categories[category];
-				map.addLayer(upToDateLayer);
-				map.addLayer(outdatedLayer);
-				map.addLayer(legacyLayer);
-				map.addLayer(thirdPartyLayer);
 				map.addLayer(categories[category]);
 			});
 
@@ -282,7 +297,7 @@
 					map.setView([0, 0], 3);
 					mapCenter = map.getCenter();
 					errToast(
-						'Could not set map view to provided coordinates, please try again or contact BTC Map.'
+						'Could not set map view to provided coordinates, please try again or contact W3B Map.'
 					);
 					console.log(error);
 				}
@@ -305,7 +320,7 @@
 					map.setView([0, 0], 3);
 					mapCenter = map.getCenter();
 					errToast(
-						'Could not set map view to provided coordinates, please try again or contact BTC Map.'
+						'Could not set map view to provided coordinates, please try again or contact W3B Map.'
 					);
 					console.log(error);
 				}
@@ -330,7 +345,7 @@
 					.catch(function (err) {
 						map.setView([0, 0], 3);
 						errToast(
-							'Could not set map view to cached coords, please try again or contact BTC Map.'
+							'Could not set map view to cached coords, please try again or contact W3B Map.'
 						);
 						console.log(err);
 					});
@@ -546,9 +561,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map</title>
+	<title>W3B Map</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/map.png" />
-	<meta property="twitter:title" content="BTC Map" />
+	<meta property="twitter:title" content="W3B Map" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/map.png" />
 </svelte:head>
 

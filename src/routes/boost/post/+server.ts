@@ -59,12 +59,12 @@ export const POST: RequestHandler = async ({ request }) => {
 							})
 							.catch(function (err) {
 								console.log(err);
-								error(400, 'Could not finalize boost, please contact BTC Map.');
+								error(400, 'Could not finalize boost, please contact W3B Map.');
 							});
 					})
 					.catch(function (err) {
 						console.log(err);
-						error(400, 'Could not finalize boost, please contact BTC Map.');
+						error(400, 'Could not finalize boost, please contact W3B Map.');
 					});
 			} else {
 				return;
@@ -72,7 +72,7 @@ export const POST: RequestHandler = async ({ request }) => {
 		})
 		.catch(function (err) {
 			console.log(err);
-			error(400, 'Could not finalize boost, please contact BTC Map.');
+			error(400, 'Could not finalize boost, please contact W3B Map.');
 		});
 
 	return json({ status: boost });

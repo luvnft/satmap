@@ -101,7 +101,7 @@
 					${
 						community.tags.sponsor
 							? `<span class="block gradient-bg w-32 mx-auto py-1 text-xs text-white font-semibold rounded-full" title='Supporter'>
-						BTC Map Sponsor
+						W3B Map Sponsor
 					</span>`
 							: ''
 					}
@@ -181,7 +181,7 @@
 			} catch (error) {
 				map.setView([0, 0], 3);
 				errToast(
-					'Could not set map view to provided coordinates, please try again or contact BTC Map.'
+					'Could not set map view to provided coordinates, please try again or contact W3B Map.'
 				);
 				console.log(error);
 			}
@@ -197,7 +197,7 @@
 			} catch (error) {
 				map.setView([0, 0], 3);
 				errToast(
-					'Could not set map view to provided coordinates, please try again or contact BTC Map.'
+					'Could not set map view to provided coordinates, please try again or contact W3B Map.'
 				);
 				console.log(error);
 			}
@@ -239,7 +239,7 @@
 				} catch (error) {
 					map.setView([0, 0], 3);
 					errToast(
-						'Could not set map view to provided coordinates, please try again or contact BTC Map.'
+						'Could not set map view to provided coordinates, please try again or contact W3B Map.'
 					);
 					console.log(error);
 				}
@@ -294,9 +294,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Community Map</title>
+	<title>W3B Map - Community Map</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
-	<meta property="twitter:title" content="BTC Map - Community Map" />
+	<meta property="twitter:title" content="W3B Map - Community Map" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/communities.png" />
 </svelte:head>
 
