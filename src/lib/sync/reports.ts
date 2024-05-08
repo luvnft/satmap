@@ -26,7 +26,7 @@ export const reportsSync = async () => {
 				do {
 					try {
 						const response = await axios.get<Report[]>(
-							`https://api.btcmap.luvnft.com/v2/reports?updated_since=${updatedSince}&limit=${limit}`
+							`https://api.btcmap.org/v2/reports?updated_since=${updatedSince}&limit=${limit}`
 						);
 
 						updatedSince = response.data[response.data.length - 1]['updated_at'];
@@ -78,7 +78,7 @@ export const reportsSync = async () => {
 				do {
 					try {
 						const response = await axios.get<Report[]>(
-							`https://api.btcmap.luvnft.com/v2/reports?updated_since=${updatedSince}&limit=${limit}`
+							`https://api.btcmap.org/v2/reports?updated_since=${updatedSince}&limit=${limit}`
 						);
 
 						// update new records if they exist
@@ -155,7 +155,7 @@ export const reportsSync = async () => {
 			do {
 				try {
 					const response = await axios.get<Report[]>(
-						`https://api.btcmap.luvnft.com/v2/reports?updated_since=${updatedSince}&limit=${limit}`
+						`https://api.btcmap.org/v2/reports?updated_since=${updatedSince}&limit=${limit}`
 					);
 
 					updatedSince = response.data[response.data.length - 1]['updated_at'];

@@ -33,7 +33,7 @@ export const POST: RequestHandler = async ({ request }) => {
 				used.push(hash);
 
 				return axios
-					.get(`https://api.btcmap.luvnft.com/v2/elements/${element}`)
+					.get(`https://api.btcmap.org/v2/elements/${element}`)
 					.then(function (response) {
 						let expires;
 						const currentBoost =
@@ -50,7 +50,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 						return axios
 							.patch(
-								`https://api.btcmap.luvnft.com/v2/elements/${element}`,
+								`https://api.btcmap.org/v2/elements/${element}`,
 								{ tags: { 'boost:expires': `${expires.toISOString()}` } },
 								{ headers }
 							)

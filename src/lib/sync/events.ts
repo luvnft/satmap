@@ -26,7 +26,7 @@ export const eventsSync = async () => {
 				do {
 					try {
 						const response = await axios.get<Event[]>(
-							`https://api.btcmap.luvnft.com/v2/events?updated_since=${updatedSince}&limit=${limit}`
+							`https://api.btcmap.org/v2/events?updated_since=${updatedSince}&limit=${limit}`
 						);
 
 						updatedSince = response.data[response.data.length - 1]['updated_at'];
@@ -76,7 +76,7 @@ export const eventsSync = async () => {
 				do {
 					try {
 						const response = await axios.get<Event[]>(
-							`https://api.btcmap.luvnft.com/v2/events?updated_since=${updatedSince}&limit=${limit}`
+							`https://api.btcmap.org/v2/events?updated_since=${updatedSince}&limit=${limit}`
 						);
 
 						// update new records if they exist
@@ -153,7 +153,7 @@ export const eventsSync = async () => {
 			do {
 				try {
 					const response = await axios.get<Event[]>(
-						`https://api.btcmap.luvnft.com/v2/events?updated_since=${updatedSince}&limit=${limit}`
+						`https://api.btcmap.org/v2/events?updated_since=${updatedSince}&limit=${limit}`
 					);
 
 					updatedSince = response.data[response.data.length - 1]['updated_at'];

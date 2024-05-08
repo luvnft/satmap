@@ -12,7 +12,7 @@ export const socials = readable({
 export const apps = readable([
 	{
 		link: '/map',
-		type: 'Web',
+		type: 'LUV NFT',
 		icon: 'web',
 		desc: 'Progressive Web App'
 	},
