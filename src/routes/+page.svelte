@@ -63,7 +63,6 @@
 					{/each}
 				</div>
 				<h2 class="text-center text-xl font-semibold text-primary dark:text-white xl:text-left">
-					BTC Map uses a global LNE (LUV NFT ESTATE) addressing system that assigns every 3m x 3m square on Earth a unique three-word address.
 					<br /><br />
 					Subscribe to
 					<a
@@ -71,8 +70,10 @@
 						target="_blank"
 						rel="noreferrer"
 						class="text-link transition-colors hover:text-hover">NFTV Discord</a
-					> as a Biz tier to add your business to the map or a LNElord to add properties that accept
-					Bitcoin $RNT.
+					> as a:<br>
+					 Broker - Earn Sats for updating the BTC Map, promoting local businesses and selling Bitcoin NFTs.<br>
+					 Biz - Add your Biz to the BTC Map, tokenize products/services and pay brokers for promo.<br>
+					 LNElord - Add properties to BTC Map that accept Bitcoin $RNT and tokenize your AUM.<br>
 				</h2>
 			</div>
 			{#if typeof window !== 'undefined'}

@@ -14,9 +14,9 @@
 </script>
 
 <svelte:head>
-	<title>BTC Map - Apps</title>
+	<title>BTC Map - Services</title>
 	<meta property="og:image" content="https://btcmap.luvnft.com/images/og/apps.png" />
-	<meta property="twitter:title" content="BTC Map - Apps" />
+	<meta property="twitter:title" content="BTC Map - Services" />
 	<meta property="twitter:image" content="https://btcmap.luvnft.com/images/og/apps.png" />
 </svelte:head>
 
@@ -30,14 +30,14 @@
 						? 'text-white'
 						: 'gradient'} text-4xl font-semibold !leading-tight text-primary dark:text-white md:text-5xl"
 				>
-					Find merchants on any platform.
+					BTC Map Services
 				</h1>
 			{:else}
 				<HeaderPlaceholder />
 			{/if}
 
 			<h2 class="mx-auto w-full text-xl font-semibold text-primary dark:text-white lg:w-[800px]">
-				We have you covered on whatever device and OS you choose.
+				Learn about LUV NFT 
 			</h2>
 
 			<h3 class="text-2xl font-semibold text-primary dark:text-white md:text-left">Official</h3>

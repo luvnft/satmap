@@ -3,7 +3,7 @@
 
 	const navLinks = [
 		{ title: 'Map', url: '/map', icon: 'map' },
-		{ title: 'Apps', url: '/apps', icon: 'apps' },
+		{ title: 'Apps', url: '/services', icon: 'apps' },
 		{ title: 'Contribute', url: '', icon: 'contribute' },
 		{ title: 'Stats', url: '', icon: 'stats' },
 		{ title: 'Areas', url: '', icon: 'areas' },
