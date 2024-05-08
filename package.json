@@ -68,7 +68,7 @@
 		"svg-captcha": "^1.4.0",
 		"tippy.js": "^6.3.7"
 	},
-	"description": "The Google Maps of Bitcoin Sats, locate businesses that accept Sats worldwide",
+	"description": "The Google Maps of Bitcoin Sats that you own as a LUV NFT, locate businesses that accept Love Money ($LUV L$VE $RNT LUV NFT) worldwide",
 	"repository": "https://github.com/teambtcmap/btcmap.org",
 	"author": "secondl1ght <secondl1ght@protonmail.com>",
 	"license": "AGPL-3.0"

@@ -14,7 +14,7 @@
 	<div class="mx-auto w-10/12 xl:w-[1200px]">
 		<main class="mb-20 mt-10 space-y-5 text-body dark:text-white">
 			<p class="text-center font-semibold text-primary dark:text-white">
-				W3B Map - The Google Maps of Bitcoin Sats, locate businesses that accept Sats worldwide
+				W3B Map - The Google Maps of Bitcoin Sats that you own as a LUV NFT, locate businesses that accept Love Money ($LUV L$VE $RNT LUV NFT) worldwide
 				<br />
 				Copyright &#169; 2022-{new Date().getFullYear()} W3B Map
 				<br />

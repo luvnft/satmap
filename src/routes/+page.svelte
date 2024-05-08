@@ -27,7 +27,7 @@
 							? 'text-white'
 							: 'gradient'} text-center text-4xl font-semibold !leading-tight md:text-5xl xl:text-left"
 					>
-						The Google Maps of Bitcoin Sats, locate businesses that accept Sats worldwide
+						The Google Maps of Bitcoin Sats that you own as a LUV NFT, locate businesses that accept Love Money ($LUV L$VE $RNT LUV NFT) worldwide
 					</h1>
 				{:else}
 					<HeaderPlaceholder />

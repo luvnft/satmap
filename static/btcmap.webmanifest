@@ -1,7 +1,7 @@
 {
 	"name": "SAT Map",
 	"short_name": "SAT Map",
-	"description": "The Google Maps of Bitcoin Sats, locate businesses that accept Sats worldwide",
+	"description": "The Google Maps of Bitcoin Sats that you own as a LUV NFT, locate businesses that accept Love Money ($LUV L$VE $RNT LUV NFT) worldwide",
 	"scope": "/",
 	"start_url": "/map",
 	"display": "standalone",
