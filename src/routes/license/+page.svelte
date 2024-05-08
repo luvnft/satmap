@@ -14,7 +14,7 @@
 	<div class="mx-auto w-10/12 xl:w-[1200px]">
 		<main class="mb-20 mt-10 space-y-5 text-body dark:text-white">
 			<p class="text-center font-semibold text-primary dark:text-white">
-				BTC Map - Explore the BTC Map to buy/sell Bitcoin NFT land and discover nearby businesses accepting Bitcoin Sats.
+				BTC Map - Explore the BTC Map to buy/sell Bitcoin NFT-backed services and products, and discover nearby businesses accepting Bitcoin Sats.
 				<br />
 				Copyright &#169; 2022-{new Date().getFullYear()} BTC Map
 				<br />

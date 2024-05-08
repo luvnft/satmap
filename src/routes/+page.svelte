@@ -27,7 +27,7 @@
 							? 'text-white'
 							: 'gradient'} text-center text-4xl font-semibold !leading-tight md:text-5xl xl:text-left"
 					>
-						Explore the BTC Map to buy/sell Bitcoin NFT land and discover nearby businesses accepting Bitcoin Sats.
+						Explore the BTC Map to buy/sell Bitcoin NFT-backed services and products, and discover nearby businesses accepting Bitcoin Sats.
 					</h1>
 				{:else}
 					<HeaderPlaceholder />
@@ -69,7 +69,7 @@
 						href="https://nftv.luvnft.com"
 						target="_blank"
 						rel="noreferrer"
-						class="text-link transition-colors hover:text-hover">NFTV Discord as a:</a><br>
+						class="text-link transition-colors hover:text-hover">NFTV</a> Discord as a:<br>
 					 <br>
 					 Broker - Earn Sats for updating the BTC Map, promoting local businesses and selling Bitcoin NFTs.<br>
 					 <br>
