@@ -15,18 +15,11 @@
 	import localforage from 'localforage';
 	import { SvelteToast } from '@zerodevx/svelte-toast';
 	import 'tippy.js/dist/tippy.css';
-<<<<<<< HEAD
   
 	// Set default axios timeout
 	axios.defaults.timeout = 10000;
   
 	// Configuration for SvelteToast
-=======
-	import '../app.css';
-
-	axios.defaults.timeout = 600000;
-
->>>>>>> 85f6a7d1754b9252f0485026d1c4e553cdd881c5
 	const options = {
 	  reversed: true,
 	  intro: { y: 192 },
