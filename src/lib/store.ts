@@ -2,11 +2,9 @@ import type { Area, Boost, Element, Event, Issue, OSMTags, Report, Theme, User }
 import { readable, writable, type Writable } from 'svelte/store';
 
 export const socials = readable({
-	twitter: 'https://twitter.com/btcmap',
-	nostr: 'https://nostr.com/npub1864jglrrhv6alguwql9pqtmd5296nww5dpcewapmmcazk8vq4mks0tt2tq',
-	discord: 'https://discord.gg/wPqva83uzq',
-	github: 'https://github.com/teambtcmap',
-	amboss: 'https://amboss.space/community/edf8d227-9bc7-4cb2-af2a-66c1b455109a'
+	twitter: 'https://x.com/luvnft',
+	nostr: 'npub1s0k9j8vn4nnjwqcze568ayx83k32jardqfh7hrk7c3mlpqkwgj0qucp3c9',
+	discord: 'https://nftv.luvnft.com',
 });
 
 export const apps = readable([
@@ -19,7 +17,7 @@ export const apps = readable([
 	{
 		link: 'https://nftv.luvnft.com',
 		type: 'NFTV DISCORD',
-		icon: 'discord',
+		icon: <img src='/icons/socials/discord.svg' alt='what3bars' />,
 		desc: 'NFTV Discord'
 	},
 	{
