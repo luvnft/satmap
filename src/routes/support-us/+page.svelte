@@ -134,33 +134,6 @@
 
 				<SupportSection {supporters} placeholders={0} />
 			</section>
-
-			<section id="node">
-				<!-- channel -->
-				<div>
-					<h3 class="text-lg font-semibold uppercase text-body dark:text-white">
-						Open a lightning channel to us
-					</h3>
-					<a
-						href="https://amboss.space/node/03ef01535d57cd3a3ddff8b4050650b278991b3eb7853f772a200079b9adb24988"
-						target="_blank"
-						rel="noreferrer"
-						class="break-all text-link transition-colors hover:text-hover"
-						>03ef01535d57cd3a3ddff8b4050650b278991b3eb7853f772a200079b9adb24988</a
-					>
-					{#if typeof window !== 'undefined'}
-						<iframe
-							title="Amboss Stats"
-							src="https://amboss.space/embed/node/info/03ef01535d57cd3a3ddff8b4050650b278991b3eb7853f772a200079b9adb24988?theme={detectTheme() ===
-								'dark' || $theme === 'dark'
-								? 'dark'
-								: 'light'}&noBackground=true"
-							width="100%"
-							class="h-[648px] md:h-[588px] lg:h-[271.5px]"
-						/>
-					{/if}
-				</div>
-			</section>
 		</main>
 
 		<Footer />

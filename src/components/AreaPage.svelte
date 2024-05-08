@@ -1120,7 +1120,7 @@
 			<h3
 				class="border-b border-statBorder p-5 text-center text-lg font-semibold text-primary dark:text-white md:text-left"
 			>
-				{name || 'BTC Map Area'} Supertaggers
+				{name || 'BTC Map Area'} NFTpreneurs
 			</h3>
 			<div bind:this={taggerDiv} class="hide-scroll max-h-[375px] overflow-scroll p-1">
 				{#if taggers && taggers.length}
@@ -1165,7 +1165,7 @@
 						{/each}
 					</div>
 				{:else}
-					<p class="p-5 text-center text-body dark:text-white">No supertaggers to display.</p>
+					<p class="p-5 text-center text-body dark:text-white">No NFTpreneurs to display.</p>
 				{/if}
 			</div>
 		</div>

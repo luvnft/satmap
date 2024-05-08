@@ -27,7 +27,7 @@
 							? 'text-white'
 							: 'gradient'} text-center text-4xl font-semibold !leading-tight md:text-5xl xl:text-left"
 					>
-						Explore the BTC Map to buy/sell 10m x 10m Bitcoin NFT land and discover nearby businesses accepting Bitcoin Sats.
+						Explore the BTC Map to buy/sell Bitcoin NFT land and discover nearby businesses accepting Bitcoin Sats.
 					</h1>
 				{:else}
 					<HeaderPlaceholder />

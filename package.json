@@ -68,7 +68,7 @@
 		"svg-captcha": "^1.4.0",
 		"tippy.js": "^6.3.7"
 	},
-	"description": "Explore the BTC Map to buy/sell 10m x 10m Bitcoin NFT land and discover nearby businesses accepting Bitcoin Sats.",
+	"description": "Explore the BTC Map to buy/sell Bitcoin NFT land and discover nearby businesses accepting Bitcoin Sats.",
 	"repository": "https://github.com/teambtcmap/btcmap.luvnft.com",
 	"author": "secondl1ght <secondl1ght@protonmail.com>",
 	"license": "AGPL-3.0"

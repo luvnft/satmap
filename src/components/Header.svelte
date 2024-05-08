@@ -3,12 +3,11 @@
 
 	const navLinks = [
 		{ title: 'Map', url: '/map', icon: 'map' },
-		{ title: 'Apps', url: '/services', icon: 'apps' },
 		{ title: 'Contribute', url: '', icon: 'contribute' },
 		{ title: 'Stats', url: '', icon: 'stats' },
 		{ title: 'Areas', url: '', icon: 'areas' },
 		{
-			title: 'Wiki',
+			title: 'CRE CLUB',
 			url: '',
 			icon: 'wiki'
 		},
@@ -35,14 +34,14 @@
 
 	const wikiDropdownLinks = [
 		{
-			title: 'General',
-			url: 'https://wiki.btcmap.luvnft.com',
+			title: 'TikTok',
+			url: 'https://tiktok.com/@creclub',
 			icon: 'general',
 			external: true
 		},
 		{
-			title: 'API',
-			url: 'https://wiki.btcmap.luvnft.com/api/introduction.html',
+			title: 'Discord',
+			url: 'https://discord.com/servers/cre-1163344441436819497',
 			icon: 'api',
 			external: true
 		}

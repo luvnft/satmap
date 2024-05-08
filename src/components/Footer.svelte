@@ -18,7 +18,6 @@
 	<div class="flex flex-wrap justify-center gap-5 xl:block xl:space-x-5">
 		<SocialLink url={$socials.discord} social="discord" />
 		<SocialLink url={$socials.github} social="github" />
-		<SocialLink url={$socials.amboss} social="amboss" />
 		<SocialLink url={$socials.nostr} social="nostr" />
 		<SocialLink url={$socials.twitter} social="twitter" />
 	</div>

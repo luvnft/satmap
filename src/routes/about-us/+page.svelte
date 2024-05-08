@@ -283,7 +283,7 @@
 			</section>
 
 			<section class="w-full space-y-10 rounded-xl bg-[#164E63] p-5 text-center text-white md:p-10">
-				<h2 class="text-3xl font-semibold">Shadowy Supertaggers</h2>
+				<h2 class="text-3xl font-semibold"> NFTpreneurs</h2>
 
 				<p class="mx-auto lg:w-[650px]">
 					NFTpreneurs are a Web5 Tribe power this project. They are volunteers who selflessly
