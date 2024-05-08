@@ -185,40 +185,39 @@
 
 	const coreTeam = [
 		{
-			name: 'Igor',
-			title: 'Backend & Android',
-			avatar: 'igor',
+			name: 'LUV NFT',
+			title: 'Tokenize the world',
+			avatar: 'luvnft-gold',
 			socials: [
-				{ url: 'https://bubelov.com/', name: 'website' },
-				{ url: 'https://github.com/bubelov', name: 'github' }
+				{ url: 'https://luvnft.com', name: 'website' },
+				{ url: 'https://market.luvnft.com', name: 'website' }
 			]
 		},
 		{
-			name: 'Nathan Day',
-			title: 'Project Manager',
-			avatar: 'nathan',
+			name: '$RNT',
+			title: 'Bitcoin $RNT BRC-20',
+			avatar: 'rnt-gold',
 			socials: [
-				{ url: 'https://twitter.com/nathan_day', name: 'twitter' },
-				{ url: 'https://github.com/dadofsambonzuki', name: 'github' }
+				{ url: 'https://x.com/rntsat', name: 'twitter' },
+				{ url: 'https://rnt.luvnft.com', name: 'website' }
 			]
 		},
 		{
-			name: 'secondl1ght',
-			title: 'Web Developer',
-			avatar: 'secondl1ght',
+			name: 'Quest L$VE',
+			title: 'Complete tasks to earn Love Money',
+			avatar: 'quest-love-gold',
 			socials: [
-				{ url: 'https://secondl1ght.site', name: 'website' },
-				{ url: 'https://twitter.com/secondl1ght', name: 'twitter' },
-				{ url: 'https://github.com/secondl1ght', name: 'github' }
+				{ url: 'https://zealy.io/cw/luvnft/questboard/', name: 'website' },
+				{ url: 'https://luvnft.com', name: 'website' }
 			]
 		},
 		{
-			name: 'Karnage',
-			title: 'Lead Designer',
-			avatar: 'karnage',
+			name: 'AR',
+			title: 'Create branded social media AR Effects',
+			avatar: 'tiktok-ar-effects-analytics-luvnft',
 			socials: [
-				{ url: 'https://twitter.com/KarnageBitcoin', name: 'twitter' },
-				{ url: 'https://github.com/cogentgene', name: 'github' }
+				{ url: 'https://nftv.luvnft.com', name: 'website' },
+				{ url: 'https://tiktok.com@luvnft', name: 'website' }
 			]
 		}
 	];
