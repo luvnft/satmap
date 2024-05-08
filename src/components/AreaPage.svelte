@@ -1312,7 +1312,7 @@
 						class="border-t border-statBorder p-5 text-center font-semibold text-primary dark:text-white"
 					>
 						View all open tickets directly on <a
-							href="https://github.com/teambtcmap/btcmap-data/issues?q=is%3Aopen+is%3Aissue+label%3A%22{name.replaceAll(
+							href="https://github.com/luvnft/btcmap-data/issues?q=is%3Aopen+is%3Aissue+label%3A%22{name.replaceAll(
 								' ',
 								'+'
 							)}%22"

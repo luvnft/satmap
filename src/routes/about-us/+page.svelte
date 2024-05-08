@@ -238,8 +238,7 @@
 			<div class="space-y-5 text-center text-xl">
 				<h1 class="text-4xl font-semibold !leading-tight md:text-5xl">About Us</h1>
 				<p class="mx-auto md:w-[600px]">
-					BTC Map is a free and open source project powered by volunteer bitcoiners and
-					bitcoin-friendly merchants around the world.
+					BTC Map is powered by NFTpreneur bitcoiners and bitcoin-friendly merchants around the world.
 				</p>
 			</div>
 
@@ -249,9 +248,8 @@
 
 					<div class="space-y-5">
 						<p>
-							Merchants are at the heart of BTC Map. These businesses are front-running the paradigm
-							change and positioning themselves for continued success. Any merchant who accepts
-							bitcoin can be listed on BTC Map.
+							Merchants are at the heart of BTC Map. These businesses are leading the way in the adoption of Bitcoin and
+							are positioning themselves for continued success. Any merchant who accepts Bitcoin can be listed on BTC Map.
 						</p>
 						<p>
 							<strong>Accept bitcoin?</strong>
@@ -416,31 +414,27 @@
 				class="w-full justify-center space-y-10 rounded-xl bg-[#EBEFF2] p-5 dark:bg-white/[0.15] md:p-10 lg:flex lg:space-x-10 lg:space-y-0"
 			>
 				<div class="lg:w-[475px]">
-					<h2 class="mb-10 text-3xl font-semibold">Core Team</h2>
+					<h2 class="mb-10 text-3xl font-semibold">Services</h2>
 
 					<div class="space-y-10">
 						<p>
-							<strong>Igor</strong> is a long time bitcoiner, mapper, and digital nomad living abroad.
-							He created BTC Map as an Android application and the project has since gained worldwide
-							momentum from there. He now also maintains all of the backend infrastructure for the project.
+							🫶 <strong>LUV NFT</strong> allows Web5 NFTprenuers to own 100% of the D-Commerce economy
+							that includes every 3M x 3M block of the BTC Map in the form of What3Words Bitcoin NFT.
 						</p>
 						<p>
-							<strong>Nathan</strong> is a tech entrepreneur turned pleb-at-large. He brought the core
-							team together to accelerate app development. Having built, sold, invested in and advised
-							tech businesses over the years he is now focused on bitcoin, building btcmap.luvnft.com, gamertron.net
-							and delivering bitcoin education for kids.
+							🔑 <strong>$RNT</strong> allows landlords and hosts to onboard to blockchain and accept Bitcoin
+							in the form of $RNT in the NFTV Discord with a BTC Map marker pair of keys that has a link to 
+							branded NFTV Discord channel or LUV Metaverse channel.
 						</p>
 						<p>
-							A self-taught Web Developer, <strong>secondl1ght</strong> dove head first down the bitcoin
-							rabbit hole and left his fiat career to focus on bitcoin development full-time. He created
-							and maintains the BTC Map web application, as well as an encrypted messaging app called
-							Cipherchat, and works on lightning network tools at Amboss Technologies.
+							🏪 The Web5 Tribe NFTprenuer brokers complete a Quest L$VE a day to earn Love Money. This includes
+							promoting local businesses on the BTC Map that need some foot traffic in their stores. Biz tiers
+							can use some of their 100K $LUV Money budget to create a Quest L$VE to generate a CTA.
 						</p>
 						<p>
-							<strong>Karnage</strong> is the lead designer on the web app and created the BTC Map brand.
-							He has contributed to many high profile bitcoin open source projects. His mission is to
-							help startup founders succeed and creates products to achieve this goal. Pixel-perfect
-							product design every time. Get it shipped.
+							😎 <strong>AR</strong> NFTV Discord subscribers can order branded AR services in the products tab
+							of the servers shop to order a custom TikTok, Instagram or Facebook AR effect ad or discount coupon
+							that customers, fans or supporters can post as a reel to promote a business near by.
 						</p>
 					</div>
 				</div>

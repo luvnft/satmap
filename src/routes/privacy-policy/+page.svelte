@@ -25,32 +25,7 @@
 			</div>
 
 			<div class="space-y-5 text-xl text-body dark:text-white">
-				<h2 class="text-3xl font-semibold text-primary dark:text-white">Forms</h2>
-				<p>What happens when you submit a form on our website:</p>
-				<ol class="ml-5 list-decimal space-y-2">
-					<li>
-						An issue is automatically created in our <a
-							href="https://github.com/teambtcmap/btcmap-data/issues"
-							class="text-link transition-colors hover:text-hover">btcmap-data</a
-						> repo on GitHub containing the form information.
-					</li>
-					<li>
-						A message is automatically sent in the <a
-							href="https://discord.gg/p8hj6SVx9X"
-							class="text-link transition-colors hover:text-hover">github-data</a
-						> channel on our Discord containing the form information.
-					</li>
-					<li>
-						If the submission is valid, it is added to <a
-							href="https://www.openstreetmap.org"
-							class="text-link transition-colors hover:text-hover">OpenStreetMap</a
-						> by a BTC Map contributor and will appear in our apps.
-					</li>
-					<li>
-						Some information including communities is not stored on OpenStreetMap but in the BTC Map
-						database instead.
-					</li>
-				</ol>
+				<h2 class="text-3xl font-semibold text-primary dark:text-white">Privacy</h2>
 				<p>
 					Please refer to the privacy policies of each of these third parties to understand how your
 					information is used there.
@@ -83,7 +58,7 @@
 				<p>
 					If you include a Twitter handle, we may Tweet about your submission from the <a
 						href={$socials.twitter}
-						class="text-link transition-colors hover:text-hover">@btcmap</a
+						class="text-link transition-colors hover:text-hover">@luvnft</a
 					> Twitter account.
 				</p>
 			</div>
@@ -134,24 +109,6 @@
 			</div>
 
 			<div class="space-y-5 text-xl text-body dark:text-white">
-				<h2 class="text-3xl font-semibold text-primary dark:text-white">(Don't Use) Google</h2>
-				<p>
-					Our Android app is available to download via the Google <a
-						href={$apps[3].link}
-						class="text-link transition-colors hover:text-hover">Play Store</a
-					>. However, we <strong>do not</strong> recommend using this method. God only knows what
-					information is collected about you when using Google services. Instead, we have our
-					Android app available for download directly from our GitHub repo as an
-					<a href={$apps[1].link} class="text-link transition-colors hover:text-hover">APK</a>
-					or on the FOSS app store
-					<a href={$apps[2].link} class="text-link transition-colors hover:text-hover">F-Droid.</a>
-				</p>
-			</div>
-
-			<div class="space-y-5 text-xl text-body dark:text-white">
-				<h2 class="text-3xl font-semibold text-primary dark:text-white">
-					How to Protect Your IP Online
-				</h2>
 				<p>
 					It is good practice to protect your public IP address when surfing the web. The two most
 					common methods to do this are:
