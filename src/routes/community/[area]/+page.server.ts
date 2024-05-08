@@ -21,7 +21,7 @@ export const load: PageServerLoad = async ({ params }) => {
 
 			const issues = await axios
 				.get(
-					`https://api.github.com/repos/teambtcmap/btcmap-data/issues?per_page=100&labels=${data.tags.name}`,
+					`https://api.github.com/repos/luvnft/satmap/issues?per_page=100&labels=${data.tags.name}`,
 					{ headers }
 				)
 				.then(function (response) {

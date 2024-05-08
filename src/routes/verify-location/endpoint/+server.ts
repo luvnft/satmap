@@ -74,7 +74,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 	const github = await axios
 		.post(
-			'https://api.github.com/repos/teambtcmap/btcmap-data/issues',
+			'https://api.github.com/repos/luvnft/satmap/issues',
 			{
 				title: name,
 				body: `Merchant name: ${name}

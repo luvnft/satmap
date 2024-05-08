@@ -12,7 +12,7 @@ export async function GET() {
 	};
 
 	const issues = await axios
-		.get('https://api.github.com/repos/teambtcmap/btcmap-data/issues?per_page=100', { headers })
+		.get('https://api.github.com/repos/luvnft/satmap/issues?per_page=100', { headers })
 		.then(function (response) {
 			// handle success
 			return response.data;
@@ -24,7 +24,7 @@ export async function GET() {
 		});
 
 	const total = await axios
-		.get('https://api.github.com/repos/teambtcmap/btcmap-data', { headers })
+		.get('https://api.github.com/repos/luvnft/satmap', { headers })
 		.then(function (response) {
 			// handle success
 			return response.data.open_issues_count;
