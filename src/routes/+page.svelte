@@ -72,7 +72,9 @@
 						class="text-link transition-colors hover:text-hover">NFTV Discord</a
 					> as a:<br>
 					 Broker - Earn Sats for updating the BTC Map, promoting local businesses and selling Bitcoin NFTs.<br>
+					 <br>
 					 Biz - Add your Biz to the BTC Map, tokenize products/services and pay brokers for promo.<br>
+					 <br>
 					 LNElord - Add properties to BTC Map that accept Bitcoin $RNT and tokenize your AUM.<br>
 				</h2>
 			</div>

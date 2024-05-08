@@ -188,7 +188,7 @@
 								class="border-t border-statBorder p-5 text-center font-semibold text-primary dark:text-white"
 							>
 								View all open tickets directly on <a
-									href="https://github.com/teambtcmap/btcmap-data/issues"
+									href="https://github.com/luvnft/btcmap-data/issues"
 									target="_blank"
 									rel="noreferrer"
 									class="text-link transition-colors hover:text-hover">GitHub</a
