@@ -69,13 +69,13 @@
 						href="https://nftv.luvnft.com"
 						target="_blank"
 						rel="noreferrer"
-						class="text-link transition-colors hover:text-hover">NFTV Discord</a><br>
-					 as a:<br>
+						class="text-link transition-colors hover:text-hover">NFTV Discord as a:</a><br>
+					 <br>
 					 Broker - Earn Sats for updating the BTC Map, promoting local businesses and selling Bitcoin NFTs.<br>
 					 <br>
-					 Biz - Add your Biz to the BTC Map, tokenize products/services and pay brokers for promo.<br>
+					 Biz - Add your Biz to the BTC Map, tokenize products/services and pay brokers for promotion.<br>
 					 <br>
-					 LNElord - Add properties to BTC Map that accept Bitcoin $RNT and tokenize your AUM.<br>
+					 LNElord - Add properties to the BTC Map that accept Bitcoin $RNB and tokenize your AUM portfolio.<br>
 				</h2>
 			</div>
 			{#if typeof window !== 'undefined'}

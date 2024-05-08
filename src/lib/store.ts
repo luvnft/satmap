@@ -13,6 +13,24 @@ export const apps = readable([
 		type: 'MAP',
 		icon: 'web',
 		desc: 'BTC Map'
+	},
+	{
+		link: 'https://nftv.luvnft.com',
+		type: 'NFTV',
+		icon: 'web',
+		desc: 'NFTV Discord'
+	},
+	{
+		link: 'https://tiktok.com/@what3bars',
+		type: '@WHAT3BARS',
+		icon: 'web',
+		desc: '@WHAT3BARS TikTok'
+	},
+	{
+		link: 'https://tiktok.com/@luvnft',
+		type: '@LUVNFT',
+		icon: 'web',
+		desc: '@LUVNFT TikTok'
 	}
 ]);
 
