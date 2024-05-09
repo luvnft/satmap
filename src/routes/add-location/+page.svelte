@@ -291,7 +291,7 @@
 
 			<p class="mt-10 text-center text-lg font-semibold text-primary dark:text-white md:text-xl">
 				If you're a business owner, please read our <a
-					href="https://wiki.btcmap.luvnft.com/general/merchant-best-practices"
+					href="https://www.linkedin.com/pulse/bitcoin-sats-map-businesses-accepting-luv-nfts-hassan-terry-o7hre/"
 					target="_blank"
 					rel="noreferrer"
 					class="text-link transition-colors hover:text-hover">Merchant Best Practices</a
